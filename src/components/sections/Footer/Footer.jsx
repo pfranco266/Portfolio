@@ -36,10 +36,6 @@ function Footer() {
 export default Footer;
 
 
-{/* <RocketButton onClick={scrollToTop} aria-label="Scroll to top">
-<RocketIcon />
-<Tooltip>Uhh Mr. Stark, I'm being beamed up</Tooltip>
-</RocketButton> */}
 
 
 

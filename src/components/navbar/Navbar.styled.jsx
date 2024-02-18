@@ -4,14 +4,13 @@ export const NavbarContainer = styled.div`
     display: flex; 
     flex-direction: column; 
     height: auto;
-    width: 75%;    
+    width: 100%;    
     padding: 2rem;
     @media (min-width: 720px) { 
-        width: 60%;
+        width: 80%;
       }
     @media (min-width: 1040px) { 
-        width: 80%;
-        position: sticky;
+        width: 100%;
         height: 100vh;
         justify-content: center; 
         align-items: center;

@@ -11,14 +11,18 @@ export const Main = styled.section`
   background-color: #0F172A;
   color: #3b7998;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height instead of height */
   width: 100%;
-  overflow: hidden;
-  @media (min-width: 1040px) { // Use grid for wider screens
-    flex-direction: row;
+
+  @media (min-width: 1040px) {
+    display: flex;
+    flex-direction: row; /* Adjust layout to side-by-side for larger screens */
+    align-items: flex-start; /* Align items to the start to allow for a full-height navbar */
     height: 100vh;
+    width: 100%;
   }
 `;
+
 
 
 export const GlobalStyle = createGlobalStyle`
@@ -29,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Exo 2';
     src: url('/assets/Fonts/static/Exo2-Black.ttf') format('truetype');
-    font-weight: 900; /* Adjust based on your font files */
+    font-weight: 900;
     font-style: normal;
   }
 
@@ -37,21 +41,24 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Exo 2', sans-serif; /* Apply globally */
+    font-family: 'Exo 2', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  html, body, #root {
+  html, body {
+    height: 100%;
+    background-color: #0F172A; /* Apply background color here */
+    color: #3b7998;
+  }
+
+  #root {
     height: 100%;
   }
 
-  a {
+  a, button {
     color: inherit;
     text-decoration: none;
-  }
-
-  button {
     background: none;
     border: none;
     padding: 0;
@@ -63,29 +70,32 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const NavbarContainer = styled.nav`
-  flex-shrink: 0; // Prevent the navbar from shrinking
-  height: auto;  position: -webkit-sticky; // For Safari
-  
+  height: auto;  
+  width: 100%;
   @media (min-width: 1040px) {
-    height: 100vh;
-    width: 50%; // Or whatever fixed width you prefer
+    width: 50%;
+    height: 100vh; /* Full viewport height */
+    position: -webkit-sticky; /* For Safari */
     position: sticky;
-    top: 0; // Stick to the top of the viewport
-    overflow-y: auto; // Enable scrolling within the navbar if needed
-    text-align: center;
+    top: 0; /* Stick to the top */
+    overflow-y: auto; /* Enable scrolling within the navbar */
   }
 `;
+
 
 export const ContentContainer = styled.div`
-  flex-grow: 1; // Take up remaining space
-  overflow-y: auto; // Enable scrolling for content
   padding: 2rem;
-
+  width: 100%;
   @media (min-width: 1040px) {
+    flex-grow: 1; /* Take up the remaining space */
     height: 100vh;
-    padding: 5vh 1rem;
+    width: 50%; /* Take up the right 50% of the screen */
+    overflow-y: auto; /* Allow scrolling within the content */
+    padding: 2rem;
   }
 `;
+
+
 
 
 

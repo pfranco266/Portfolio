@@ -48,7 +48,7 @@ export const DownloadButton = styled.button`
     color: #05d5c4;
     border-color: #05d5c4;
   &:hover {
-    color: blue;
+    color: #D5C405;
     cursor: pointer;
 
     // Apply a downward movement to the entire button
@@ -63,7 +63,7 @@ export const DownloadIcon = styled(FaArrowDown)`
 
   // Ensure the icon color changes when the button is hovered
     ${DownloadButton}:hover & {
-    color: blue; // This ensures the icon color changes on button hover
+    color: #D5C405; // This ensures the icon color changes on button hover
     transform: translateY(5px);
   }
 `;

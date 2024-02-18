@@ -4,6 +4,7 @@ import { Subtitle, Text, TechItem, TechContainer, ProjectContainer, TextContaine
 function Project ({projects}) {
     const listItems = projects.map((project) => (
         <ProjectContainer key={project.id}>
+            <a href={`${project.website}`} target="_blank" rel="noopener noreferrer">
             <TextContainer>
                 <Subtitle>
                     {project.name}
@@ -12,18 +13,13 @@ function Project ({projects}) {
                     {project.description}
                 </Text>
             </TextContainer>
-            {/* <PictureContainer>
-                <Picture>
-                    {project.picture}
-                </Picture>
-            </PictureContainer> */}
+
             <TechContainer>
                     {project.tech.map((element, index) => (
                        <TechItem key={index}>{element}</TechItem> 
                     ))}
             </TechContainer>
-            
-
+            </a>
         </ProjectContainer>
     ))
 

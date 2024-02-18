@@ -5,7 +5,9 @@ const projectData = [
         description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
         Nulla optio totam, dolorem ea praesentium tempora! Libero maiores magni accusamus, 
         non, aut animi rem officia aliquam iste accusantium iure delectus commodi!`,
-        tech: ['HTML', 'React + Vite', 'Styled Components', 'Netlifly']
+        tech: ['HTML', 'React + Vite', 'Styled Components', 'Netlifly'], 
+        website: 'https://www.ohanasportsllc.com/', 
+        thumbnail: "/path/to/thumbnail1.jpg"
     }, 
     {
         id: 2,
@@ -13,7 +15,9 @@ const projectData = [
         description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
         Nulla optio totam, dolorem ea praesentium tempora! Libero maiores magni accusamus, 
         non, aut animi rem officia aliquam iste accusantium iure delectus commodi!`,
-        tech: ['HTML', 'Vanilla Javascript', 'Netlifly']
+        tech: ['HTML', 'Vanilla Javascript', 'Netlifly'], 
+        website: 'https://pfranco266.netlify.app/?', 
+        thumbnail: "/path/to/thumbnail2.jpg"
     }, 
     {
         id: 3,
@@ -21,7 +25,9 @@ const projectData = [
         description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
         Nulla optio totam, dolorem ea praesentium tempora! Libero maiores magni accusamus, 
         non, aut animi rem officia aliquam iste accusantium iure delectus commodi!`,
-        tech: ['HTML', 'Vanilla Javascript', 'EJS', 'Express', 'MongoDB', 'Bootstrap', 'Onrender', 'Passport JS']
+        tech: ['HTML', 'Vanilla Javascript', 'EJS', 'Express', 'MongoDB', 'Bootstrap', 'Onrender', 'Passport JS'], 
+        website: 'https://philcamp.onrender.com/home',
+        thumbnail: "/path/to/thumbnail3.jpg"
     }
 ];
 
