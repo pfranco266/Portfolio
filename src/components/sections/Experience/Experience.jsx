@@ -14,7 +14,7 @@ function Experience ({experiences = []}) {
                 {exp.location}
             </Text>
             <Text>
-                {exp.role}, {exp.year}
+                {exp.role}
             </Text>
             <Text>
                 {exp.description}
