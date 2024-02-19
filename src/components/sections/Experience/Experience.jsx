@@ -8,8 +8,11 @@ function Experience ({experiences = []}) {
         
         <ExpSection key={exp.id}>
             <Subtitle>
-                {exp.company}
+                {exp.company} 
             </Subtitle>
+            <Text>
+                {exp.location}
+            </Text>
             <Text>
                 {exp.role}, {exp.year}
             </Text>
