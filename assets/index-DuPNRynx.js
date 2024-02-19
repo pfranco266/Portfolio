@@ -329,7 +329,7 @@ font-size: 1.25rem;
     color: #D5C405; // This ensures the icon color changes on button hover
     transform: translateY(5px);
   }
-`;function zm({experiences:e=[]}){const t=e.map(n=>P.jsxs(Pm,{children:[P.jsx(_m,{children:n.company}),P.jsx(el,{children:n.location}),P.jsxs(el,{children:[n.role,", ",n.year]}),P.jsx(el,{children:n.description})]},n.id));return P.jsx(P.Fragment,{children:t})}const Tm=[{id:1,company:"Meta (Formerly Facebook)",location:"London, United Kingdom",role:"Senior Technical Recruiter, 2022-2023",description:`Part of the layoffs. Whomp Whomp. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+`;function zm({experiences:e=[]}){const t=e.map(n=>P.jsxs(Pm,{children:[P.jsx(_m,{children:n.company}),P.jsx(el,{children:n.location}),P.jsx(el,{children:n.role}),P.jsx(el,{children:n.description})]},n.id));return P.jsx(P.Fragment,{children:t})}const Tm=[{id:1,company:"Meta (Formerly Facebook)",location:"London, United Kingdom",role:"Senior Technical Recruiter, 2022-2023",description:`Part of the layoffs. Whomp Whomp. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Excepturi animi quod, quis cum accusamus hic aliquam sequi nemo rem 
         consequatur enim ullam aut, facere nam. Tenetur aspernatur hic 
         repellendus cupiditate!`},{id:2,company:"Meta (Formerly Facebook)",location:"Seattle, Washington",role:"Senior, Multiple titles, 2018-2021",description:`Grew through various roles culminating in Senior Technical Recruiter. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
