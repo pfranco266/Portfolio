@@ -28,9 +28,9 @@ export const ProjectContainer = styled.div`
     border-radius: 10px; /* Maintain border-radius */
     &:hover {
         cursor: pointer;
-        box-shadow: 0 0 0 2px #05d5c4; /* Simulate border with box-shadow */
+        box-shadow: 0 0 0 2px orange; /* Simulate border with box-shadow */
         ${Subtitle} {
-            color: #D5C405;
+            color: orange;
         }
     }
 `;

@@ -6,15 +6,17 @@ export const Container = styled.section`
     flex-direction: column;
     width: 100%;
     height: auto;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
     @media (min-width: 1040px) {
-        height: 100vh;
+        height: auto;
       }
 `;
 
 export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
     justify-content: space-evenly;
 `;
 

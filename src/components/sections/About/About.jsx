@@ -1,5 +1,6 @@
 import React from "react";
 import {Text, Title, TextContainer, Container} from "./About.styled"
+import aboutData from "./aboutData";
 
 function About () {
     return (
@@ -8,23 +9,10 @@ function About () {
                 ABOUT
             </Title>
             <TextContainer>
-                <Text> 
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Iusto, quas magni delectus ut eius reprehenderit omnis odit quis, eos, 
-                    vitae quasi explicabo aut! Dolorum provident aperiam voluptatibus in facere sunt? 
-                </Text>
 
-                <Text> 
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Iusto, quas magni delectus ut eius reprehenderit omnis odit quis, eos, 
-                    vitae quasi explicabo aut! Dolorum provident aperiam voluptatibus in facere sunt? 
-                </Text>
-
-                <Text> 
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Iusto, quas magni delectus ut eius reprehenderit omnis odit quis, eos, 
-                    vitae quasi explicabo aut! Dolorum provident aperiam voluptatibus in facere sunt? 
-                </Text>
+                {aboutData.map((about) => (
+                    <Text key={about.id}>{about.description}</Text> 
+                ))}
             </TextContainer>
         </Container>
     )

@@ -83,15 +83,15 @@ export const NavbarContainer = styled.nav`
 `;
 
 
-export const ContentContainer = styled.div`
-  padding: 2rem;
+export const ContentContainer = styled.section`
+  padding: 0 2rem 2rem 2rem;
   width: 100%;
   @media (min-width: 1040px) {
     flex-grow: 1; /* Take up the remaining space */
     height: 100vh;
     width: 50%; /* Take up the right 50% of the screen */
     overflow-y: auto; /* Allow scrolling within the content */
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem; //scroll to top on 'about' section, so padding: 2rem left space at top. Applied to about directly
   }
 `;
 

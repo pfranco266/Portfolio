@@ -24,7 +24,7 @@ export const RocketIcon = styled(BsRocket)`
     transition: transform 0.2s ease; // Smooth transform effect
     &:hover {
         cursor: pointer;
-
+        color: orange;
     }
     
 `;
@@ -50,6 +50,7 @@ export const RocketContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: .75rem 0;
 
     &:hover  ${RocketMessage}{
         visibility: visible;

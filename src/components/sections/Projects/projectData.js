@@ -15,7 +15,7 @@ const projectData = [
         description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
         Nulla optio totam, dolorem ea praesentium tempora! Libero maiores magni accusamus, 
         non, aut animi rem officia aliquam iste accusantium iure delectus commodi!`,
-        tech: ['HTML', 'Vanilla Javascript', 'Netlifly'], 
+        tech: ['HTML', 'Vanilla Javascript', 'Netlify'], 
         website: 'https://pfranco266.netlify.app/?', 
         thumbnail: "/path/to/thumbnail2.jpg"
     }, 

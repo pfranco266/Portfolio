@@ -5,10 +5,10 @@ function Footer() {
   const scrollToSectionOrTop = () => {
     if(window.innerWidth > 1040) {
       const about = document.getElementById('about');
+      const content = document.getElementById('contentContainer');
+      console.log("Content Main:", about);
       if (about) {
-        about.scrollIntoView({
-          behavior: 'smooth', 
-        });
+        about.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
       }
     }
     else {
@@ -37,41 +37,3 @@ export default Footer;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const scrollToSectionOrTop = () => {
-//   if(window.innerWidth > 1040) {
-//     // If in widescreen, scroll to the 'About' section
-//     const aboutSection = document.getElementById('about');
-//     if (aboutSection) {
-//       aboutSection.scrollIntoView({
-//         behavior: 'smooth',
-//       });
-//     }
-//   } else {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: 'smooth',
-//     });
-//   }
-// };
-
-
-// onClick={scrollToSectionOrTop}

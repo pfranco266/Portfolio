@@ -92,10 +92,14 @@ export const NavLink = styled.a`
   display: block; // Example: Makes each link a block element for vertical stacking
   padding: 8px 0; // Example: Adds some padding above and below each link
   color: #3b7897;
+  border-bottom: 0px solid transparent; /* Add transparent border to maintain layout */
+  transition: border-color 0.3s; /* Smooth transition for the border color */
   text-decoration: none; // Removes underline from links
   cursor: pointer;
   &:hover {
     color: #05d5c4; // Example: Change color on hover
+    box-shadow: 0 2px 0 0px orange; /* Simulate border with box-shadow */
+    width: 100%;
   }
   @media (min-width: 1040px) {
     font-size: 1.2rem;

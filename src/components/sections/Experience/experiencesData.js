@@ -4,30 +4,25 @@ const experiences = [
         company: 'Meta (Formerly Facebook)',
         location: 'London, United Kingdom',
         role: 'Senior Technical Recruiter, 2022-2023',
-        description: `Part of the layoffs. Whomp Whomp. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Excepturi animi quod, quis cum accusamus hic aliquam sequi nemo rem 
-        consequatur enim ullam aut, facere nam. Tenetur aspernatur hic 
-        repellendus cupiditate!`
+        description: `Recruiting for senior software engineering talent across the EU. My tenure in London ended in June
+        of 2023 after another round of layoffs occured.`
     },
     {
         id: 2,
         company: 'Meta (Formerly Facebook)',
         location: 'Seattle, Washington',
         role: 'Senior, Multiple titles, 2018-2021',
-        description: `Grew through various roles culminating in Senior Technical Recruiter. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Excepturi animi quod, quis cum accusamus hic aliquam sequi nemo rem 
-        consequatur enim ullam aut, facere nam. Tenetur aspernatur hic 
-        repellendus cupiditate!`
+        description: `Grew through various roles culminating in Senior Technical Recruiter. Started as a Sourcer, for senior talent
+        in the Seattle area, before transitioning to a "closer" role. I transferred to the early careers team in 2020, to continue 
+        my recruiting for mid-senior talent. I was promoted in early 2021, and left amicably to continue my work internationally, in London.`
     },
     {
         id: 3,
         company: 'Amazon',
         location: 'Seattle, Washington',
         role: 'Sourcer, 2016-2018',
-        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Excepturi animi quod, quis cum accusamus hic aliquam sequi nemo rem 
-        consequatur enim ullam aut, facere nam. Tenetur aspernatur hic 
-        repellendus cupiditate!`
+        description: `Started my coroporate recruiting career as a Technical Sourcer for Amazon's last mile team. 
+        Appointed subject matter expert for our CRM, and held numerous trainings to help imrove team productivity.`
     }
 ];
 

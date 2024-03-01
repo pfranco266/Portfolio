@@ -7,7 +7,7 @@ export const Section = styled.section`
     width: 100%;
     height: auto;
     @media (min-width: 1040px) {
-      height: 100vh;
+      height: auto;
       justify-content: space-evenly;
     }
 `
