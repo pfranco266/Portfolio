@@ -1,28 +1,33 @@
 const aboutData = [
     {
         id: 1,
-        description: `During my intial daily commutes tenure with Amazon, I wanted to learn more about the technical
-        details of things the engineers were working on, and describing in my calls with them. As I learned more, my interests grew. 
-        This knowledge helped propel my working productivity as I became (comparitively) technical. This helped me leverage 
-        knowledge of the building block of our CRM, and how to refine my skills using it.`
+        description: `My journey into the world of technology began during my tenure at Amazon, where my daily 
+        interactions with engineers sparked my curiosity to understand the technical aspects behind our conversations. 
+        This growing interest not only enhanced my productivity but also allowed me to develop a technical edge, 
+        leveraging my knowledge to optimize our CRM's functionalities.`
         
     }, 
     {
         id: 2,
-        description: `In my tenure with (then Facebook) Meta, I begain expanding my interest, into learning basics of coding. 
-        I would spend my daily commute time learning. When the pandemic hit, I decided to take my learning more seriously, and 
-        began some Udemy courses, and practiced more often. I dabbled on and off coding, even catching bugs during candidate hiring 
-        reviews.`
+        description: `During my time at Meta, my curiosity evolved into a more profound interest in coding.
+         My commutes transformed into learning sessions, and the onset of the pandemic led to a further commitment 
+         to coding.`
         
     }, 
     {
         id: 3,
-        description: `When I was laid off, I decided I would take some further time to learn how to code. I around the world
-        to different places, coding in the morning, exploring during the day, and coding by night. I've travelled to many places, 
-        and have been afforded the time to build things, and learn the passion I love: coding. My goal is simple - continue the story, 
-        learn and strive to be great at this next adventure. `
+        description: `The unexpected turn of being laid off opened a new chapter for me. I immersed myself fully
+          in coding, I was traveling the world while maintaining a disciplined routine of coding. This unique journey
+          has taken me to numerous places, allowing me the privilege to build, learn, and pursue
+          this interest turned passtion, for coding.`
         
+    },
+    {
+        id: 4,
+        description: `My goal is straightforward - to continue this story of learning and to excel in this next 
+        chapter of my adventure.`
     }
 ];
 
 export default aboutData;
+
