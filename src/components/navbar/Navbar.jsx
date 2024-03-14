@@ -1,8 +1,7 @@
 import { NavbarContainer, Title, Subtitle, Text, NavHidden, NavLink} from './Navbar.styled.jsx';
 import Contact from '../sections/Contact/Contact';
 import React from "react";
-import TypingEffect from '../../TypingEffect/TypingEffect.jsx';
-
+import TypingEffect from '../../TypingEffect.jsx/TypingEffect.jsx';
 
 
 function Navbar() {

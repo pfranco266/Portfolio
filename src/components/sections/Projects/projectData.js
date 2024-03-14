@@ -25,10 +25,11 @@ const projectData = [
         description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
         Nulla optio totam, dolorem ea praesentium tempora! Libero maiores magni accusamus, 
         non, aut animi rem officia aliquam iste accusantium iure delectus commodi!`,
-        tech: ['HTML', 'Vanilla Javascript', 'EJS', 'Express', 'MongoDB', 'Bootstrap', 'Onrender', 'Passport JS'], 
+        tech: ['HTML', 'Vanilla Javascript', 'EJS', 'Mapbox gl', 'Express', 'MongoDB', 'Bootstrap', 'Onrender', 'Passport JS'], 
         website: 'https://philcamp.onrender.com/home',
         thumbnail: "/path/to/thumbnail3.jpg"
     }
 ];
 
 export default projectData;
+

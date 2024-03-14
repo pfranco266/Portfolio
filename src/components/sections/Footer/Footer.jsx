@@ -6,7 +6,7 @@ function Footer() {
     if(window.innerWidth > 1040) {
       const about = document.getElementById('about');
       const content = document.getElementById('contentContainer');
-      console.log("Content Main:", about);
+      console.log("Content Main:", about); 
       if (about) {
         about.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
       }

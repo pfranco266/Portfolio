@@ -2,8 +2,8 @@ import styled, { keyframes } from 'styled-components';
 
 // Keyframes for the typing animation
 const typing = keyframes`
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0;}
+  to { width: 100%; }
 `;
 
 // Keyframes for the cursor blinking effect

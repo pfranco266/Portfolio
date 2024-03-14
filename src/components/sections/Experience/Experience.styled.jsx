@@ -25,6 +25,8 @@ export const Subtitle = styled.h4`
 
 export const Text = styled.p`
     margin-bottom: .5rem;
+    text-align: justify;
+    
 `;
 
 export const ExpSection = styled.section`

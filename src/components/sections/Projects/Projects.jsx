@@ -9,7 +9,6 @@ function Projects () {
         <StyledSection id="projects">
             <Title>PROJECTS</Title>
             <Project projects={projectData}/>
-
         </StyledSection>
     )
 }

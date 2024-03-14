@@ -72,10 +72,8 @@ export const Text = styled.p`
     }
     @media (min-width: 1040px) {
         text-align: center;
-        font-size: 1.5rem;
+        
     }
-
-    
 `; 
 
 export const NavHidden = styled.div`
