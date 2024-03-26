@@ -40,6 +40,8 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h3`
     text-align: left;
+    width: auto;
+
     padding: 0.5rem 0rem;
     color: #05d5c4;
     @media (min-width: 500px) {

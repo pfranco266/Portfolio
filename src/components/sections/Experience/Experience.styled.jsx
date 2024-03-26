@@ -47,9 +47,20 @@ export const DownloadButton = styled.button`
   display: flex; // Use flexbox to center the icon and text
   align-items: center; // Center items vertically
   justify-content: center; // Center items horizontally
+  transition: transform .5s, box-shadow .5s;
     color: #05d5c4;
     border-color: #05d5c4;
   &:hover {
+    transform: translateY(-2px);
+    box-shadow: 1px 5px 5px #05d5c4;
+    color: #D5C405;
+    cursor: pointer;
+    // Apply a downward movement to the entire button
+    
+  }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: .5px 2px 2px #05d5c4;
     color: #D5C405;
     cursor: pointer;
 
@@ -64,8 +75,15 @@ export const DownloadIcon = styled(FaArrowDown)`
    transition: transform .3s; // Apply transition for smoothness
 
   // Ensure the icon color changes when the button is hovered
+
     ${DownloadButton}:hover & {
-    color: #D5C405; // This ensures the icon color changes on button hover
+    color: #D5C405; 
     transform: translateY(5px);
   }
 `;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  
+`

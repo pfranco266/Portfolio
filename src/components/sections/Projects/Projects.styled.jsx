@@ -46,7 +46,6 @@ export const TextContainer = styled.div`
 export const Text = styled.p`
     margin-bottom: .5rem;
     text-align: justify;
-
 `;
 
 export const PictureContainer = styled.div`

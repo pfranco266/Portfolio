@@ -95,7 +95,23 @@ export const ContentContainer = styled.section`
   }
 `;
 
+export const Text = styled.p`
+Margin: 2vh 0;
+line-height: 1.625;
+text-align: justify;
+@media (min-width: 500px) {
+    font-size: 1rem;
+    padding: 1rem 0;
+    }
 
+@media (min-width: 640px) {
+font-size: 1.25rem;
+
+}
+@media (min-width: 1040px) {
+    line-height: 2;   
+}
+`;
 
 
 

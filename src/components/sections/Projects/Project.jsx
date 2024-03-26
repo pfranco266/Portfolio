@@ -1,5 +1,6 @@
 import React from "react";
-import { Subtitle, Text, TechItem, TechContainer, ProjectContainer, TextContainer, PictureContainer, Picture } from "./Projects.styled";
+import { Subtitle, TechItem, TechContainer, ProjectContainer, TextContainer, PictureContainer, Picture } from "./Projects.styled";
+import { Text } from "../Experience/Experience.styled";
 
 function Project ({projects}) {
     const listItems = projects.map((project) => (
