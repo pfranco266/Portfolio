@@ -23,6 +23,28 @@ export const Main = styled.section`
   }
 `;
 
+export const Container = styled.section`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    padding-top: 2rem; //padding here instead of ContentContainer Component because of scroll to top in footer
+    @media (min-width: 1040px) {
+        height: auto;
+      }
+`;
+
+export const Title = styled.h3`
+margin-bottom: 5vh;
+color: #05d5c4;
+
+`;
+
+export const Subtitle = styled.h4`
+    padding: 2.5vh 0;
+    color: #05d5c4;
+`
 
 
 export const GlobalStyle = createGlobalStyle`

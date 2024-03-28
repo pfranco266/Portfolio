@@ -5,7 +5,7 @@ const experiences = [
         location: 'London, United Kingdom',
         role: 'Senior Technical Recruiter, 2022-2023',
         description: `Recruiting for senior software engineering talent across the EU. My tenure in London ended in June
-        of 2023 after another round of layoffs occured.`
+        of 2023 after layoffs occured.`
     },
     {
         id: 2,

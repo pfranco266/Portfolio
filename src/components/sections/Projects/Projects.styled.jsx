@@ -1,20 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSection = styled.section`
-display: flex;
-flex-direction: column;
-margin-bottom: 1rem;
-@media (min-width: 1040px) {
-    height: 120vh;
-    justify-content: space-evenly;
-    
-  }
-`;
 
-export const Title = styled.h3`
-    padding: 5vh 0;
-    color: #05d5c4;
-`;
 export const Subtitle = styled.h4`
     color: #05d5c4;
     padding: 2.5vh 0;

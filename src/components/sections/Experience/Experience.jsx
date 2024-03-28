@@ -1,5 +1,6 @@
 import React from "react";
-import {Subtitle, ExpSection, Text} from './Experience.styled.jsx';
+import {ExpSection, Text} from './Experience.styled.jsx';
+import { Subtitle } from "../../../App.styled.jsx";
 
 function Experience ({experiences = []}) {
 

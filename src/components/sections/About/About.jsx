@@ -1,5 +1,6 @@
 import React from "react";
-import {Text, Title, TextContainer, Container} from "./About.styled"
+import {Text,  TextContainer} from "./About.styled"
+import {Title, Container} from "../../../App.styled"
 import aboutData from "./aboutData";
 
 function About () {

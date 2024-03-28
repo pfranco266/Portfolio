@@ -1,5 +1,6 @@
 import React from "react";
-import { Subtitle, TechItem, TechContainer, ProjectContainer, TextContainer, PictureContainer, Picture } from "./Projects.styled";
+import { TechItem, TechContainer, ProjectContainer, TextContainer, PictureContainer, Picture } from "./Projects.styled";
+import { Subtitle } from "../../../App.styled";
 import { Text } from "../Experience/Experience.styled";
 
 function Project ({projects}) {

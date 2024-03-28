@@ -5,7 +5,8 @@ import React from "react";
 import Experience from "./Experience";
 
 // Style imports
-import { Section, Title, DownloadButton, DownloadIcon, Container } from './Experience.styled';
+import { DownloadButton, DownloadIcon, ResumeContainer } from './Experience.styled';
+import { Title, Container } from "../../../App.styled.jsx";
 
 // Data imports
 import experiences from './experiencesData.js'
@@ -13,18 +14,21 @@ import experiences from './experiencesData.js'
 function Experiences() {
 
     return (
-        <Section id="experiences">
+        <Container id="experiences">
             <Title>EXPERIENCE</Title>
             <Experience experiences={experiences} />
-            <Container>
-                <DownloadButton>Web Dev Resume <DownloadIcon />
-                </DownloadButton>
-                <DownloadButton>Recruiter Resume <DownloadIcon />
-                </DownloadButton>
-            </Container>
+            <ResumeContainer>
+                <a href="https://pfranco266.github.io/Portfolio/WebDev.pdf" download="Phil_Franco_WebDev.pdf">
 
-
-        </Section>
+                    <DownloadButton>Web Dev Resume <DownloadIcon />
+                    </DownloadButton>
+                </a>
+                <a href="https://pfranco266.github.io/Portfolio/Recruiter.pdf" download="Phil_Franco_Recruiter.pdf">
+                    <DownloadButton>Recruiter Resume <DownloadIcon />
+                    </DownloadButton>
+                </a>
+            </ResumeContainer>
+        </Container>
     )
 }
 

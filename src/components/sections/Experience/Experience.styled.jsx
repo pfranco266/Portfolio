@@ -1,27 +1,10 @@
 import styled from "styled-components";
 import { FaArrowDown } from "react-icons/fa";
 
-export const Section = styled.section`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    @media (min-width: 1040px) {
-      height: auto;
-      justify-content: space-evenly;
-    }
-`
 
-export const Title = styled.h3`
-    padding: 5vh 0;
-    color: #05d5c4;
-    
-`
 
-export const Subtitle = styled.h4`
-    padding: 2.5vh 0;
-    color: #05d5c4;
-`
+
+
 
 export const Text = styled.p`
     margin-bottom: .5rem;
@@ -82,7 +65,7 @@ export const DownloadIcon = styled(FaArrowDown)`
   }
 `;
 
-export const Container = styled.div`
+export const ResumeContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   
