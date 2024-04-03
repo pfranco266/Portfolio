@@ -27,7 +27,7 @@ function Footer() {
       </RocketContainer>
       <Message>
       Thanks for visiting! Designed by and created in Visual Studio Code by Phil Franco...aka me. 
-      Built with React + Styled Components, deployed using Netlifly. 
+      Built with React + Styled Components, deployed using GitHub Pages. 
       </Message>
     </StyledFooter>
   );
