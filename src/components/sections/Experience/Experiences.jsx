@@ -12,8 +12,6 @@ import { Title, Container } from "../../../App.styled.jsx";
 import experiences from './experiencesData.js'
 
 
-
-
 function Experiences() {
 
         

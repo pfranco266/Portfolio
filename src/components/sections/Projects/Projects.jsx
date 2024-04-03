@@ -3,6 +3,10 @@ import { Container, Title } from "../../../App.styled.jsx";
 import Project from "./Project.jsx";
 import projectData from './projectData.js'
 
+
+
+
+
 function Projects () {
     
     return (
