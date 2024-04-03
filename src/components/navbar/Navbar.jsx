@@ -7,14 +7,22 @@ import TypingEffect from '../../TypingEffect.jsx/TypingEffect.jsx';
 function Navbar() {
 
   function scrollToSection(sectionId) {
-    const sectElement = document.getElementById(sectionId)
-    if(sectElement) {
-    sectElement.scrollIntoView({
-      behavior: 'smooth',
-    });
-  }
+    const sectElement = document.getElementById(sectionId);
+    if (sectElement) {
+      sectElement.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
   }
 
+  function trackLinkClick(event, sectionName) {
+    event.preventDefault(); // This might be optional depending on your actual navigation mechanism
+    scrollToSection(sectionName);
+    window.gtag('event', 'select_content', {
+      content_type: 'navigation',
+      item_id: sectionName
+    });
+  }
 
   return (
     <NavbarContainer>
@@ -28,13 +36,13 @@ function Navbar() {
         Self-taught professional, seeking an opportunity to contribute value, and expand my learnings.
       </Text>
       <NavHidden>
-        <NavLink aria-label="Scroll to about section" onClick={() => scrollToSection('about')}>
+        <NavLink aria-label="Scroll to about section" onClick={(e) => trackLinkClick(e, 'about')}>
           - - - About
         </NavLink>
-        <NavLink aria-label="Scroll to experiences section" onClick={() => scrollToSection('experiences')}>
+        <NavLink aria-label="Scroll to experiences section" onClick={(e) => trackLinkClick(e, 'experiences')}>
           - - - Experience
         </NavLink>
-        <NavLink aria-label="Scroll to project section" onClick={() => scrollToSection('projects')}>
+        <NavLink aria-label="Scroll to project section" onClick={(e) => trackLinkClick(e, 'projects')}>
           - - - Projects
         </NavLink>
       </NavHidden>
