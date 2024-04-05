@@ -8,8 +8,11 @@ import Experiences from './components/sections/Experience/Experiences';
 import Projects from './components/sections/Projects/Projects';
 import Footer from './components/sections/Footer/Footer';
 
+
+
 function App() {
 
+  
   return (
     
     <Main>
