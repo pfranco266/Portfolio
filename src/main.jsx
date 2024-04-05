@@ -6,7 +6,7 @@ import './index.css'
 import TagManager from 'react-gtm-module';
 
 const tagManagerArgs = {
-  gtmId: 'GTM-MHD579RT',
+  gtmId: 'GTM-M7JWTF5D',
 };
 
 TagManager.initialize(tagManagerArgs);
