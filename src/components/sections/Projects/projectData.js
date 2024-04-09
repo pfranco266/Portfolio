@@ -1,6 +1,10 @@
-import ohanaThumbnail from '/Portfolio/src/assets/Images/Ohana.png';
-import PhilCamp from '/Portfolio/src/assets/Images/Philcamp.png';
-import Mapty from '/Portfolio/src/assets/Images/Mapty.png';
+import ohanaThumbnail from '../../../assets/Images/Ohana.png';
+
+import PhilCamp from '../../../assets/Images/Philcamp.png';
+
+
+import Mapty from '../../../assets/Images/Mapty.png';
+
 
 
 
