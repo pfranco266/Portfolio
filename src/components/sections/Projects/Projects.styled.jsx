@@ -11,12 +11,13 @@ export const ProjectContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-bottom: .5rem;
+    margin-bottom: 3rem;
     padding: 10px;
     border: 2px solid transparent; /* Add transparent border to maintain layout */
     border-radius: 10px; /* Maintain border-radius */
     @media (min-width: 1040px) {
         flex-direction: row;
+    
 
       }
 
@@ -43,7 +44,7 @@ export const Text = styled.p`
 `;
 
 export const PictureContainer = styled.div`
-    padding: 10px;
+    padding-right: 20px;
 
 `;
 
@@ -79,5 +80,11 @@ export const TechItem = styled.p`
 
 
 export const InfoContainer = styled.div`
+display: flex;
+
+
+`
+
+export const LargeScreenContainer = styled.div`
 display: flex;
 `

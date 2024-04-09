@@ -9,7 +9,7 @@ const projectData = [
     {
         id: 1,
         name: 'Ohana Sports',
-        description: `1 of 2 developers to create, and maintain site. Built using React, and azure functions for the backend.
+        description: `1 of 2 developers to design, and maintain site from scratch. Built using React, and azure functions for the backend.
         This project was my first working with another team member. We had weekly meetings with the site owner to discuss direction
         and changes necessary. I had never worked with React prior to this. This is a live site, and ongoing project. Please feel free to explore. 
         `,
@@ -20,8 +20,8 @@ const projectData = [
     {
         id: 2,
         name: 'Mapty',
-        description: `'Mapty', is a workout tracking application, made in Valinna JS. This is part of a tutorial by Jonas
-        Schmeddmen. I took reigns on this to add additional functionality, as well as stylings to make it mobile friendly. 
+        description: `'Mapty', is a workout tracking application, made in Vanilla JS. This is part of a tutorial by Jonas
+        Schmeddmen. I took the reigns on this to add additional functionality, as well as stylings to make it mobile friendly. 
         I faced challenged implementing an "edit" workout component, as it required the blend of "create" componenet, as well 
         as the use of data-ids, which made for a nice challenge. I also used animations for the first time, to pulse the 
         "open workouts" button.`,
@@ -37,7 +37,7 @@ const projectData = [
         to outdated suggestions. Learning and working with Node and express was challenging, but perhaps my favorite part of 
         my web development journey to date. If you click through to the project, please be patient, as I am using free OnRender, 
         which is quite slow... Like, comically slow.`,
-        tech: ['HTML', 'Vanilla Javascript', 'EJS', 'Mapbox gl', 'Express', 'MongoDB', 'Bootstrap', 'Onrender', 'Passport JS'], 
+        tech: ['HTML', 'Vanilla Javascript', 'EJS', 'Mapbox gl', 'Express', 'Github', 'MongoDB', 'Bootstrap', 'Onrender', 'Passport JS'], 
         website: 'https://philcamp.onrender.com/home',
         thumbnail: PhilCamp
     }

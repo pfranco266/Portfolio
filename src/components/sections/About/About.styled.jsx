@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { StockText } from "../../../App.styled";
+
 
 
 
@@ -12,17 +14,15 @@ export const TextContainer = styled.div`
 
 
 
-export const Text = styled.p`
+export const Text = styled(StockText)`
 Margin: 0;
 line-height: 1.625;
 text-align: justify;
 @media (min-width: 500px) {
-    font-size: 1rem;
     padding: 1rem 0;
     }
 
 @media (min-width: 640px) {
-font-size: 1.25rem;
 
 }
 @media (min-width: 1040px) {
