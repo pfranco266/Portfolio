@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Text as StockText } from "../../../App.styled";
+import { Text as StockText } from "../Experience/Experience.styled";
 
 
 

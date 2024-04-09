@@ -1,6 +1,6 @@
 import './App.css'
 import { GlobalStyle, Main, ContentContainer, NavbarContainer } from './App.styled.jsx';
-import React, {useEffect} from 'react';
+import React from 'react';
 
 // import Contact from './components/sections/Contact/Contact';
 import Navbar from './components/navbar/Navbar';
