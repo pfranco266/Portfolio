@@ -1,3 +1,10 @@
+import ohanaThumbnail from '/Portfolio/src/assets/Images/Ohana.png';
+import PhilCamp from '/Portfolio/src/assets/Images/Philcamp.png';
+import Mapty from '/Portfolio/src/assets/Images/Mapty.png';
+
+
+
+
 const projectData = [
     {
         id: 1,
@@ -8,7 +15,7 @@ const projectData = [
         `,
         tech: ['HTML', 'React + Vite', 'Styled Components', 'Azure Functions'], 
         website: 'https://www.ohanasportsllc.com/', 
-        thumbnail: "/path/to/thumbnail1.jpg"
+        thumbnail: ohanaThumbnail,
     }, 
     {
         id: 2,
@@ -20,7 +27,7 @@ const projectData = [
         "open workouts" button.`,
         tech: ['HTML', 'Vanilla Javascript', 'Netlify', 'Leaflet'], 
         website: 'https://pfranco266.netlify.app/?', 
-        thumbnail: "/path/to/thumbnail2.jpg"
+        thumbnail: Mapty
     }, 
     {
         id: 3,
@@ -32,7 +39,7 @@ const projectData = [
         which is quite slow... Like, comically slow.`,
         tech: ['HTML', 'Vanilla Javascript', 'EJS', 'Mapbox gl', 'Express', 'MongoDB', 'Bootstrap', 'Onrender', 'Passport JS'], 
         website: 'https://philcamp.onrender.com/home',
-        thumbnail: "/path/to/thumbnail3.jpg"
+        thumbnail: PhilCamp
     }
 ];
 

@@ -4,7 +4,7 @@ import { StyledFooter,  RocketIcon,  RocketContainer, RocketMessage, Message } f
 function Footer() {
   const scrollToSectionOrTop = () => {
     if(window.innerWidth > 1040) {
-      const about = document.getElementById('about');
+      const about = document.getElementById('experiences');
       const content = document.getElementById('contentContainer');
       console.log("Content Main:", about); 
       if (about) {

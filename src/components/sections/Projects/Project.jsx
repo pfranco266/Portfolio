@@ -1,5 +1,5 @@
 import React from "react";
-import { TechItem, TechContainer, ProjectContainer, TextContainer, PictureContainer, Picture } from "./Projects.styled";
+import { TechItem, InfoContainer, TechContainer, ProjectContainer, TextContainer, PictureContainer, Picture } from "./Projects.styled";
 import { Subtitle } from "../../../App.styled";
 import { Text } from "../Experience/Experience.styled";
 
@@ -11,11 +11,15 @@ function Project({ projects }) {
           content_type: 'project',
           item_id: projectName
         });
-        window.location.href = projectUrl; // Manually navigate to the project URL
+        window.location.href = projectUrl; 
     };
 
     const listItems = projects.map((project) => (
         <ProjectContainer key={project.id}>
+            <PictureContainer>
+                <Picture src={project.thumbnail} alt={`Thumbnail for ${project.name}`} /> 
+            </PictureContainer>
+            <InfoContainer>
             <a href={`${project.website}`} onClick={(e) => trackProjectClick(project.name, project.website, e)} target="_blank" rel="noopener noreferrer">
                 <TextContainer>
                     <Subtitle>
@@ -32,6 +36,7 @@ function Project({ projects }) {
                     ))}
                 </TechContainer>
             </a>
+            </InfoContainer>
         </ProjectContainer>
     ));
 

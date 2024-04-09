@@ -36,14 +36,14 @@ function Navbar() {
         Self-taught professional, seeking an opportunity to contribute value, and expand my learnings.
       </Text>
       <NavHidden>
-        <NavLink aria-label="Scroll to about section" onClick={(e) => trackLinkClick(e, 'about')}>
-          - - - About
-        </NavLink>
         <NavLink aria-label="Scroll to experiences section" onClick={(e) => trackLinkClick(e, 'experiences')}>
           - - - Experience
         </NavLink>
         <NavLink aria-label="Scroll to project section" onClick={(e) => trackLinkClick(e, 'projects')}>
           - - - Projects
+        </NavLink>
+        <NavLink aria-label="Scroll to about section" onClick={(e) => trackLinkClick(e, 'about')}>
+          - - - About
         </NavLink>
       </NavHidden>
       <Contact />

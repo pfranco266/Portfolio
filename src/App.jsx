@@ -19,9 +19,10 @@ function App() {
         <Navbar />
       </NavbarContainer>
       <ContentContainer id='contentContainer'>
-        <About />
+        
         <Experiences />
         <Projects />
+        <About />
         <Footer />
       </ContentContainer>
     </Main>

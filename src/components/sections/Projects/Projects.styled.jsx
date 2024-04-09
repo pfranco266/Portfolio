@@ -8,10 +8,18 @@ export const Subtitle = styled.h4`
 `;
 
 export const ProjectContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     margin-bottom: .5rem;
     padding: 10px;
     border: 2px solid transparent; /* Add transparent border to maintain layout */
     border-radius: 10px; /* Maintain border-radius */
+    @media (min-width: 1040px) {
+        flex-direction: row;
+
+      }
+
     &:hover {
         cursor: pointer;
         box-shadow: 0 0 0 2px orange; /* Simulate border with box-shadow */
@@ -35,11 +43,21 @@ export const Text = styled.p`
 `;
 
 export const PictureContainer = styled.div`
-  
+    padding: 10px;
+
 `;
 
 export const Picture = styled.img`
-  
+display: none;
+
+@media (min-width: 1040px) {
+    flex-direction: row;
+    display: inline;
+    width: 175px;       /* Your desired width */
+    height: 175px;      /* Your desired height */
+    object-fit: cover;  /* This will cover the area without stretching the image */
+    border-radius: 10px; /* Optional: if you want rounded corners */
+  }
 `;
 
 export const TechContainer = styled.div`
@@ -60,3 +78,6 @@ export const TechItem = styled.p`
 
 
 
+export const InfoContainer = styled.div`
+display: flex;
+`
