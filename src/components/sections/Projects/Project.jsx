@@ -2,6 +2,7 @@ import React from "react";
 import { TechItem, LargeScreenContainer, InfoContainer, TechContainer, ProjectContainer, TextContainer, PictureContainer, Picture } from "./Projects.styled";
 import { Subtitle } from "../../../App.styled";
 import { Text } from "../Experience/Experience.styled";
+import ProjectIcon from "./ProjectIcon"
 
 function Project({ projects }) {
 
@@ -39,7 +40,8 @@ function Project({ projects }) {
             </LargeScreenContainer>
             <TechContainer>
                     {project.tech.map((element, index) => (
-                        <TechItem key={index}>{element}</TechItem>
+                        <TechItem key={index}>{element.name} <ProjectIcon key={index} tech={element}/>
+                        </TechItem>
                     ))}
                 </TechContainer>
             </a>
