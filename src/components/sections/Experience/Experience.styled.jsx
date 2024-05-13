@@ -30,7 +30,7 @@ export const DownloadButton = styled.button`
   display: flex; // Use flexbox to center the icon and text
   align-items: center; // Center items vertically
   justify-content: center; // Center items horizontally
-  transition: transform .5s, box-shadow .5s;
+  transition: transform .2s, box-shadow .2s;
     color: #05d5c4;
     border-color: #05d5c4;
   &:hover {

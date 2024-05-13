@@ -88,3 +88,7 @@ display: flex;
 export const LargeScreenContainer = styled.div`
 display: flex;
 `
+
+export const Smalltext = styled.p`
+  font-size: 8px;
+`

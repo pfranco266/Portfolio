@@ -1,18 +1,18 @@
 import React from "react"
 import projectData from "./projectData"
+import {Smalltext} from './Projects.styled'
 
 
 
 
 function ProjectIcon ({tech}) {
     const IconComponent = tech.icon
-    console.log('boobs', tech)
 
     return (
         
       <>
      
-       {IconComponent ? <IconComponent /> : <p>No icon available</p>}
+       {IconComponent ? <IconComponent /> : <Smalltext>(No icon available)</Smalltext>}
 
        </>
 
