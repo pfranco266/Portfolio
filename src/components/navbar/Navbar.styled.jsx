@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const NavbarContainer = styled.div`
     display: flex; 
@@ -15,7 +15,18 @@ export const NavbarContainer = styled.div`
         justify-content: center; 
         align-items: center;
     }
-`; 
+`;
+
+export const slideFromLeft = keyframes`
+from {
+  opacity: 0;
+  transform: translateX(-100%); 
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+`;
 
 export const Title = styled.h1`
     text-align: left;
@@ -23,6 +34,8 @@ export const Title = styled.h1`
     margin-bottom: 1rem;
     Flex-wrap: nowrap;
     color: #05d5c4;
+    animation: ${slideFromLeft} 0.5s ease-out forwards; 
+
     @media (min-width: 500px) {
         font-size: 2rem;
         padding: 1rem 0;
@@ -35,8 +48,9 @@ export const Title = styled.h1`
     @media (min-width: 1040px) {
         
         font-size: 2.75rem;
+
     }
-`; 
+`;
 
 export const Subtitle = styled.h3`
     text-align: left;
@@ -56,7 +70,7 @@ export const Subtitle = styled.h3`
     @media (min-width: 1040px) {
         font-size: 2;
     }
-`; 
+`;
 
 
 
@@ -76,16 +90,31 @@ export const Text = styled.p`
         text-align: center;
         
     }
-`; 
+`;
+
+const slideIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(100%); // Start from below the screen
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); // End at the usual position
+  }
+`;
 
 export const NavHidden = styled.div`
   display: none; // Hidden by default
   
-  @media (min-width: 1040px) { // Adjust the breakpoint as needed
-    display: block; // Show on larger screens
+  @media (min-width: 1040px) { // Show and animate on larger screens
+    display: block;
     padding: 1rem 0;
+    animation: ${slideIn} 0.5s ease-out forwards; // Apply the animation
+
   }
 `;
+
+
 
 export const NavLink = styled.a`
   /* Styles for your navigation links */
@@ -100,10 +129,12 @@ export const NavLink = styled.a`
     color: #05d5c4; // Example: Change color on hover
     box-shadow: 0 2px 0 0px orange; /* Simulate border with box-shadow */
     width: 100%;
+    
   }
   @media (min-width: 1040px) {
     font-size: 1.2rem;
     text-align: left;
-    
+
   }
 `;
+

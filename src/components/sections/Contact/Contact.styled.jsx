@@ -1,8 +1,18 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import {  AiOutlineLinkedin } from 'react-icons/ai';
 import { IoLogoInstagram } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
+
+export const slide = keyframes`
+      0% {
+        transform: translateX(1000%)
+      }
+     
+    100% {
+        transform: translateX(0%);
+    }
+`
 
 
 
@@ -14,6 +24,8 @@ export const IconContainer = styled.div`
     justify-content: space-between;
     height: 5vh;
     width: 90%;
+    overflow: hidden; // Hide overflow within the navbar container
+
     margin-top: 1rem;
     @media (min-width: 1040px) {
         width: 80%
@@ -21,18 +33,39 @@ export const IconContainer = styled.div`
       }
 `
 
+
+
 export const Linkedin = styled(AiOutlineLinkedin)`
     height: 2rem;
     width: 2rem;
-    &:hover {
+    overflow: hidden; // Hide overflow within the navbar container
+    animation: ${slide} 1s ease-out forwards;
+        &:hover {
         color: #005e9b;
         box-shadow: 0 4px 3px -4px #f1f1f1;
     }
 `
 
+export const GitHub = styled(FaGithub)`
+    height: 2rem;
+    width: 2rem;
+    overflow: hidden; // Hide overflow within the navbar container
+    animation: ${slide} 0.7s ease-out forwards;
+
+    &:hover {
+        color: #333333;
+        box-shadow: 0 4px 3px -4px #f1f1f1;
+    }
+`;
+
+
 export const Instagram = styled(IoLogoInstagram)`
     height: 2rem;
     width: 2rem;
+    overflow: hidden; // Hide overflow within the navbar container
+    animation: ${slide} 0.5s ease-out forwards;
+
+
     &:hover {
        color: #FD1D1D;
        box-shadow: 0 4px 3px -4px #f1f1f1;
@@ -42,19 +75,14 @@ export const Instagram = styled(IoLogoInstagram)`
 export const Email = styled(BiLogoGmail)`
     height: 2rem;
     width: 2rem;
+    overflow: hidden; // Hide overflow within the navbar container
+    animation: ${slide} 0.3s ease-out forwards;
+
     &:hover {
         color: #c14540;
         box-shadow: 0 3px 3px -3px #f1f1f1;
     }
 `
 
-export const GitHub = styled(FaGithub)`
-    height: 2rem;
-    width: 2rem;
-    &:hover {
-        color: #333333;
-        box-shadow: 0 4px 3px -4px #f1f1f1;
-    }
-`;
 
 
