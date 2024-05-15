@@ -71,11 +71,12 @@ export const Title = styled.h1`
 `;
 
 export const Selfie = styled.img`
-    width: 170px;
-    height: 170px;
+    width: 180px;
+    height: 180px;
     top: 10px;
     left: 10px;
     border-radius: 50%;
+
 `
 
 export const Subtitle = styled.h3`
