@@ -1,5 +1,29 @@
 import styled, { keyframes } from "styled-components";
 
+//Keyframes
+const slideIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(100%); // Start from below the screen
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); // End at the usual position
+  }
+`;
+
+export const slideFromLeft = keyframes`
+0% {
+  opacity: 0;
+  transform: translateX(-100%); 
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+`;
+
+//components 
 export const NavbarContainer = styled.div`
     display: flex; 
     flex-direction: column; 
@@ -17,19 +41,11 @@ export const NavbarContainer = styled.div`
     }
 `;
 
-export const slideFromLeft = keyframes`
-from {
-  opacity: 0;
-  transform: translateX(-100%); 
-}
-to {
-  opacity: 1;
-  transform: translateY(0);
-}
-`;
+
 
 export const Title = styled.h1`
     text-align: left;
+    font-size: 1.5rem;
     letter-spacing: 0.18rem;
     margin-bottom: 1rem;
     Flex-wrap: nowrap;
@@ -55,7 +71,7 @@ export const Title = styled.h1`
 export const Subtitle = styled.h3`
     text-align: left;
     width: auto;
-
+    font-size: 1rem;
     padding: 0.5rem 0rem;
     color: #05d5c4;
     @media (min-width: 500px) {
@@ -92,16 +108,7 @@ export const Text = styled.p`
     }
 `;
 
-const slideIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(100%); // Start from below the screen
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); // End at the usual position
-  }
-`;
+
 
 export const NavHidden = styled.div`
   display: none; // Hidden by default
