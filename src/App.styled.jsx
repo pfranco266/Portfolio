@@ -1,4 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
+import {  MdOutlineLightMode  } from "react-icons/md";
+import { CiCloudMoon } from "react-icons/ci";
+
+
 import styled from "styled-components";
 
 // COLOR KEY:
@@ -11,17 +15,44 @@ export const Main = styled.section`
   background-color: #0F172A;
   color: #3b7998;
   flex-direction: column;
-  min-height: 100vh; /* Use min-height instead of height */
+  min-height: 100vh; 
   width: 100%;
 
   @media (min-width: 1040px) {
     display: flex;
-    flex-direction: row; /* Adjust layout to side-by-side for larger screens */
-    align-items: flex-start; /* Align items to the start to allow for a full-height navbar */
+    flex-direction: row; 
+    align-items: flex-start; 
     height: 100vh;
     width: 100%;
   }
 `;
+
+export const DarkIcon = styled(CiCloudMoon )`
+position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 5%;
+  top: 5%;
+  color: orange;
+
+  &:hover {
+    cursor: pointer;
+    color: #FFDF22;
+  }
+`
+export const LightIcon = styled(MdOutlineLightMode)`
+position: absolute;
+width: 35px;
+height: 35px;
+  right: 5%;
+  top: 5%;
+  color: #FFDF22;
+  &:hover {
+    color: #fb9062;
+    cursor: pointer;
+    
+  }
+`
 
 export const Container = styled.section`
     display: flex;

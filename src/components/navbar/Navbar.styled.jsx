@@ -30,6 +30,8 @@ export const NavbarContainer = styled.div`
     height: auto;
     width: 100%;    
     padding: 2rem;
+    justify-content: center; 
+    align-items: center;
     @media (min-width: 720px) { 
         width: 80%;
       }
@@ -67,6 +69,14 @@ export const Title = styled.h1`
 
     }
 `;
+
+export const Selfie = styled.img`
+    width: 170px;
+    height: 170px;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+`
 
 export const Subtitle = styled.h3`
     text-align: left;

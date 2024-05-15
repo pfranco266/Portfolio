@@ -1,7 +1,10 @@
-import { NavbarContainer, Title, Subtitle, Text, NavHidden, NavLink} from './Navbar.styled.jsx';
+import { NavbarContainer, Title, Subtitle, Text, NavHidden, NavLink, Selfie} from './Navbar.styled.jsx';
 import Contact from '../sections/Contact/Contact';
 import React from "react";
 import TypingEffect from '../../TypingEffect.jsx/TypingEffect.jsx';
+import selfie from "../../assets/Images/phil.webp"
+import selfiev2 from "../../assets/Images/philv2.png"
+
 
 
 function Navbar() {
@@ -26,9 +29,12 @@ function Navbar() {
 
   return (
     <NavbarContainer>
+
       <Title>
         Phillip Franco
       </Title>
+      <Selfie src={selfie} alt='animated portrait'/>
+
       <Subtitle>
         <TypingEffect text={`Web Developer`}/>
       </Subtitle>
