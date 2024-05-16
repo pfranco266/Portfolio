@@ -74,7 +74,7 @@ export const TechItem = styled.p`
     border-radius: 10px;
     margin-right: 0.6rem;
     color: ${({theme})=> theme === 'light' ? '#05d5c4' : '#05d5c4'};
-    background-color: ${({theme})=> theme === 'light' ? '#3b7998' : 'rgb(28, 80, 116, 0.4);'};
+    background-color: ${({theme})=> theme === 'light' ? '#05d5c4' : 'rgb(28, 80, 116, 0.4);'};
     
 `;
 
