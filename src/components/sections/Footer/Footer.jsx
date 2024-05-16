@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { StyledFooter,  RocketIcon,  RocketContainer, RocketMessage, Message } from './Footer.styled';
-
+import { ThemeContext } from '../../../Store/ThemeContext';
 function Footer() {
+  const {theme} = useContext(ThemeContext)
+
   const scrollToSectionOrTop = () => {
     if(window.innerWidth > 1040) {
       const about = document.getElementById('experiences');
@@ -22,7 +24,7 @@ function Footer() {
   return (
     <StyledFooter>
         <RocketContainer>
-        <RocketIcon onClick={scrollToSectionOrTop} aria-label="Scroll to top" />
+        <RocketIcon theme={theme} onClick={scrollToSectionOrTop} aria-label="Scroll to top" />
         <RocketMessage>Ummm... Mr. Stark, I'm being beamed up!!</RocketMessage>
       </RocketContainer>
       <Message>

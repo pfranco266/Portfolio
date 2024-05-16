@@ -73,7 +73,7 @@ export const TechItem = styled.p`
     border: 1px solid black;
     border-radius: 10px;
     margin-right: 0.6rem;
-    color: ${({theme})=> theme === 'light' ? 'black' : '#05d5c4'}; 
+    color: ${({theme})=> theme === 'light' ? '#3b7998' : '#3b7998'};
     background-color: rgb(28, 80, 116, 0.4);
 `;
 

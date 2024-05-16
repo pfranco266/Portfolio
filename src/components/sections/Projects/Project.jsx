@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import { TechItem, LargeScreenContainer, InfoContainer, TechContainer, ProjectContainer, TextContainer, PictureContainer, Picture } from "./Projects.styled";
 import { Subtitle } from "../../../App.styled";
 import { Text } from "../Experience/Experience.styled";
 import ProjectIcon from "./ProjectIcon"
+import { ThemeContext } from "../../../Store/ThemeContext";
 
 function Project({ projects }) {
 
+    const {theme} = useContext(ThemeContext)
     const trackProjectClick = (projectName, projectUrl, event) => {
         event.preventDefault(); // Prevent the default link behavior temporarily
         window.gtag('event', 'select_content', {
@@ -40,7 +42,7 @@ function Project({ projects }) {
             </LargeScreenContainer>
             <TechContainer>
                     {project.tech.map((element, index) => (
-                        <TechItem key={index}>{element.name} <ProjectIcon key={index} tech={element}/>
+                        <TechItem theme={theme} key={index}>{element.name} <ProjectIcon theme={theme} key={index} tech={element}/>
                         </TechItem>
                     ))}
                 </TechContainer>
