@@ -25,7 +25,7 @@ export const ProjectContainer = styled.div`
         cursor: pointer;
         box-shadow: 0 0 0 2px orange; /* Simulate border with box-shadow */
         ${Subtitle} {
-            color: orange;
+            color: #05d5c4;
         }
     }
 `;
@@ -73,8 +73,9 @@ export const TechItem = styled.p`
     border: 1px solid black;
     border-radius: 10px;
     margin-right: 0.6rem;
-    color: ${({theme})=> theme === 'light' ? '#3b7998' : '#3b7998'};
-    background-color: rgb(28, 80, 116, 0.4);
+    color: ${({theme})=> theme === 'light' ? '#05d5c4' : '#05d5c4'};
+    background-color: ${({theme})=> theme === 'light' ? '#3b7998' : 'rgb(28, 80, 116, 0.4);'};
+    
 `;
 
 

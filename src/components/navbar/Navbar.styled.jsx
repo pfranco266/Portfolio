@@ -147,7 +147,7 @@ export const NavLink = styled.a`
   cursor: pointer;
   &:hover {
     color: #05d5c4; // Example: Change color on hover
-    box-shadow: 0 2px 0 0px orange; /* Simulate border with box-shadow */
+    box-shadow: 0 2px 0 0px #fb9062; /* Simulate border with box-shadow */
     width: 100%;
     
   }

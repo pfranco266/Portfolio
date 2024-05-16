@@ -13,7 +13,7 @@ function Projects () {
     return (
         <Container id="projects">
             <Title theme={theme}>PROJECTS</Title>
-            <Project projects={projectData}/>
+            <Project theme={theme} projects={projectData}/>
         </Container>
     )
 }

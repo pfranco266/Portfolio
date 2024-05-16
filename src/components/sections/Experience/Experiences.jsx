@@ -35,13 +35,13 @@ function Experiences() {
                    download="Phil_Franco_WebDev.pdf"
                    target="_blank" // Opens in a new tab
                    onClick={() => trackResumeDownload('Web Dev Resume')}>
-                    <DownloadButton>Web Dev Resume <DownloadIcon /></DownloadButton>
+                    <DownloadButton theme={theme}>Web Dev Resume <DownloadIcon /></DownloadButton>
                 </a>
                 <a href="https://pfranco266.github.io/Portfolio/Recruiter.pdf"
                    download="Phil_Franco_Recruiter.pdf"
                    target="_blank" // Opens in a new tab
                    onClick={() => trackResumeDownload('Recruiter Resume')}>
-                    <DownloadButton>Recruiter Resume <DownloadIcon /></DownloadButton>
+                    <DownloadButton theme={theme}>Recruiter Resume <DownloadIcon /></DownloadButton>
                 </a>
             </ResumeContainer>
             </Container>

@@ -19,12 +19,12 @@ export const StyledFooter = styled.footer`
 export const RocketIcon = styled(BsRocket)`
     width: 2.5rem;
     height: 1.8rem;
-    color: ${({theme})=> theme === 'light' ? '#3b7998' : '#3b7998'};
+    color: ${({theme})=> theme === 'light' ? '#fb9062' : '#fb9062'};
     margin-right: 8px; // You may not need this margin if the icon is centered above the message
     transition: transform 0.2s ease; // Smooth transform effect
     &:hover {
         cursor: pointer;
-        color: orange;
+        color: #05d5c4;
     }
     
 `;

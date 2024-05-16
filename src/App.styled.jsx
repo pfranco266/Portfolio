@@ -46,9 +46,9 @@ width: 35px;
 height: 35px;
   right: 5%;
   top: 5%;
-  color: #FFDF22;
+  color: #fb9062;
   &:hover {
-    color: #fb9062;
+    color: #0F172A;
     cursor: pointer;
     
   }
