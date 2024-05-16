@@ -39,19 +39,13 @@ export const DownloadButton = styled.button`
   &:active {
     transform: translateY(2px);
     box-shadow: .5px 2px 2px #05d5c4;
-    cursor: pointer;
-
-    // Apply a downward movement to the entire button
-    
+    cursor: pointer;    
   }
 `;
 
-// Adjusted DownloadIcon to remove transform on hover
 export const DownloadIcon = styled(FaArrowDown)`
    margin-left: 8px;
-   transition: transform .3s; // Apply transition for smoothness
-
-  // Ensure the icon color changes when the button is hovered
+   transition: transform .3s; 
 
     ${DownloadButton}:active & {
     color: #FFDF22; 

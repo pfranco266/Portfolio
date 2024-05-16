@@ -20,8 +20,8 @@ export const RocketIcon = styled(BsRocket)`
     width: 2.5rem;
     height: 1.8rem;
     color: ${({theme})=> theme === 'light' ? '#fb9062' : '#fb9062'};
-    margin-right: 8px; // You may not need this margin if the icon is centered above the message
-    transition: transform 0.2s ease; // Smooth transform effect
+    margin-right: 8px; 
+    transition: transform 0.2s ease; 
     &:hover {
         cursor: pointer;
         color: #05d5c4;
@@ -38,7 +38,6 @@ export const RocketMessage = styled.span`
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
 `;

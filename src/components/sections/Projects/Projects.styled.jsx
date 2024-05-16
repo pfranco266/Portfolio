@@ -54,10 +54,10 @@ display: none;
 @media (min-width: 1040px) {
     flex-direction: row;
     display: inline;
-    width: 175px;       /* Your desired width */
-    height: 175px;      /* Your desired height */
-    object-fit: cover;  /* This will cover the area without stretching the image */
-    border-radius: 10px; /* Optional: if you want rounded corners */
+    width: 175px;       
+    height: 175px;     
+    object-fit: cover;
+    border-radius: 10px; 
   }
 `;
 

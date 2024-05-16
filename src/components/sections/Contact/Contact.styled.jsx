@@ -24,7 +24,7 @@ export const IconContainer = styled.div`
     justify-content: space-between;
     height: 5vh;
     width: 90%;
-    overflow: hidden; // Hide overflow within the navbar container
+    overflow: hidden; // hide  the overflow within the navbar container w/ animation
 
     margin-top: 1rem;
     @media (min-width: 1040px) {
@@ -38,23 +38,22 @@ export const IconContainer = styled.div`
 export const Linkedin = styled(AiOutlineLinkedin)`
     height: 2rem;
     width: 2rem;
-    overflow: hidden; // Hide overflow within the navbar container
     animation: ${slide} 1s ease-out forwards;
         &:hover {
         color: #005e9b;
-        box-shadow: 0 4px 3px -4px #f1f1f1;
+        box-shadow: 0 4px 3px -4px ${({theme})=> theme === 'light' ? '#1e1e1e' : '#f1f1f1'};
+
     }
 `
 
 export const GitHub = styled(FaGithub)`
     height: 2rem;
     width: 2rem;
-    overflow: hidden; // Hide overflow within the navbar container
     animation: ${slide} 0.7s ease-out forwards;
 
     &:hover {
         color: #333333;
-        box-shadow: 0 4px 3px -4px #f1f1f1;
+        box-shadow: 0 4px 3px -4px ${({theme})=> theme === 'light' ? '#1e1e1e' : '#f1f1f1'};
     }
 `;
 
@@ -62,13 +61,12 @@ export const GitHub = styled(FaGithub)`
 export const Instagram = styled(IoLogoInstagram)`
     height: 2rem;
     width: 2rem;
-    overflow: hidden; // Hide overflow within the navbar container
     animation: ${slide} 0.5s ease-out forwards;
 
 
     &:hover {
        color: #FD1D1D;
-       box-shadow: 0 4px 3px -4px #f1f1f1;
+       box-shadow: 0 4px 3px -4px ${({theme})=> theme === 'light' ? '#1e1e1e' : '#f1f1f1'};
     }
 `
 
@@ -80,7 +78,7 @@ export const Email = styled(BiLogoGmail)`
 
     &:hover {
         color: #c14540;
-        box-shadow: 0 3px 3px -3px #f1f1f1;
+        box-shadow: 0 4px 3px -4px ${({theme})=> theme === 'light' ? '#1e1e1e' : '#f1f1f1'};
     }
 `
 

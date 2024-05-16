@@ -13,12 +13,12 @@ const blinkCaret = keyframes`
 `;
 
 export const Typewriter = styled.p`
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typewriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Centers the element */
-  letter-spacing: .2em; /* Adjust as needed */
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .2em; 
   animation: ${typing} 2s steps(13, end), ${blinkCaret} .75s step-end infinite;
 
-  display: inline-block; /* Adjusts width based on content */
+  display: inline-block; 
 `;

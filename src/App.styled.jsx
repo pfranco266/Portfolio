@@ -60,7 +60,7 @@ export const Container = styled.section`
     width: 100%;
     height: auto;
     margin-bottom: 2rem;
-    padding-top: 2rem; //padding here instead of ContentContainer Component because of scroll to top in footer
+    padding-top: 2rem; 
     @media (min-width: 1040px) {
         height: auto;
       }
@@ -129,11 +129,11 @@ export const NavbarContainer = styled.nav`
   width: 100%;
   @media (min-width: 1040px) {
     width: 50%;
-    height: 100vh; /* Full viewport height */
-    position: -webkit-sticky; /* For Safari */
+    height: 100vh; 
+    position: -webkit-sticky; 
     position: sticky;
-    top: 0; /* Stick to the top */
-    overflow-y: auto; /* Enable scrolling within the navbar */
+    top: 0; 
+    overflow-y: auto; 
   }
 `;
 
