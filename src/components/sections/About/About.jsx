@@ -1,12 +1,14 @@
-import React from "react";
+import React, {useContext} from "react";
 import {Text,  TextContainer} from "./About.styled"
 import {Title, Container} from "../../../App.styled"
 import aboutData from "./aboutData";
+import { ThemeContext } from "../../../Store/ThemeContext";
 
 function About () {
+    const {theme} = useContext(ThemeContext)
     return (
         <Container id="about">
-            <Title> 
+            <Title theme={theme}> 
                 ABOUT
             </Title>
             <TextContainer>

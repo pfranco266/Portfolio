@@ -31,13 +31,13 @@ function Navbar() {
   return (
     <NavbarContainer>
 
-      <Title>
+      <Title theme={theme}>
         Phillip Franco
       </Title>
       {theme === 'light' ? <Selfie src={selfiev2} alt='animated portrait'/> : <Selfie src={selfie} alt='animated portrait'/>}
       
 
-      <Subtitle>
+      <Subtitle theme={theme}>
         <TypingEffect text={`Web Developer`}/>
       </Subtitle>
       <Text>

@@ -13,7 +13,7 @@ import styled from "styled-components";
 export const Main = styled.section`
   display: flex;
   background-color: ${({theme})=> theme === 'dark' ? '#0F172A' : '#f0e8d5'};
-  color: ${({theme})=> theme === 'light' ? '#0F172A' : '#3b7998'};
+  color: ${({theme})=> theme === 'light' ? '#3b7998' : '#3b7998'};
   flex-direction: column;
   min-height: 100vh; 
   width: 100%;
@@ -75,7 +75,8 @@ color: ${({theme})=> theme === 'light' ? 'black' : '#05d5c4'};
 
 export const Subtitle = styled.h4`
     padding: 2.5vh 0;
-    color: #05d5c4;
+    color: ${({theme})=> theme === 'light' ? 'black' : '#05d5c4'}; 
+
 `
 
 

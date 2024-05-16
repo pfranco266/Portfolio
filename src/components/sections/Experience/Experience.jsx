@@ -2,15 +2,15 @@ import React from "react";
 import {ExpSection, Text} from './Experience.styled.jsx';
 import { Subtitle } from "../../../App.styled.jsx";
 
-function Experience ({experiences = []}) {
+function Experience ({experiences = [], theme}) {
 
 
     const listData = experiences.map((exp) => (
         
         <ExpSection key={exp.id}>
-            <Subtitle>
+            <Subtitle theme={theme}>
                 {exp.company} 
-            </Subtitle>
+            </Subtitle >
             <Text>
                 {exp.location}
             </Text>

@@ -1,17 +1,18 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Container, Title } from "../../../App.styled.jsx";
 import Project from "./Project.jsx";
 import projectData from './projectData.js'
-
+import { ThemeContext } from "../../../Store/ThemeContext.jsx";
 
 
 
 
 function Projects () {
-    
+
+    const {theme} = useContext(ThemeContext);
     return (
         <Container id="projects">
-            <Title>PROJECTS</Title>
+            <Title theme={theme}>PROJECTS</Title>
             <Project projects={projectData}/>
         </Container>
     )

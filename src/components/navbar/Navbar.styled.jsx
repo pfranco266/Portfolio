@@ -53,7 +53,7 @@ export const Title = styled.h1`
     letter-spacing: 0.18rem;
     margin-bottom: 1rem;
     Flex-wrap: nowrap;
-    color: #05d5c4;
+    color: ${({theme})=> theme === 'light' ? '#0F172A' : '#05d5c4'}; 
     animation: ${slideFromLeft} 0.5s ease-out forwards; 
 
     @media (min-width: 500px) {
@@ -86,7 +86,7 @@ export const Subtitle = styled.h3`
     width: auto;
     font-size: 1rem;
     padding: 0.5rem 0rem;
-    color: #05d5c4;
+    color: ${({theme})=> theme === 'light' ? '#0F172A' : '#05d5c4'}; 
     @media (min-width: 500px) {
         font-size: 1.25rem;
         padding: 1rem 0;

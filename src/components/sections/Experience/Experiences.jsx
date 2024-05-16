@@ -1,5 +1,5 @@
 // External imports
-import React from "react";
+import React, {useContext} from "react";
 
 // Internal component imports
 import Experience from "./Experience";
@@ -11,9 +11,12 @@ import { Title, Container } from "../../../App.styled.jsx";
 // Data imports
 import experiences from './experiencesData.js'
 
+import { ThemeContext } from "../../../Store/ThemeContext.jsx";
+
+
 
 function Experiences() {
-
+  const {theme} = useContext(ThemeContext);
         
     function trackResumeDownload(resumeName) {
         if (window.gtag) {
@@ -25,8 +28,8 @@ function Experiences() {
       }
         return (
             <Container id="experiences">
-                <Title>EXPERIENCE</Title>
-                <Experience experiences={experiences} />
+                <Title theme={theme}>EXPERIENCE</Title>
+                <Experience experiences={experiences} theme={theme} />
                 <ResumeContainer>
                 <a href="https://pfranco266.github.io/Portfolio/WebDev.pdf"
                    download="Phil_Franco_WebDev.pdf"
