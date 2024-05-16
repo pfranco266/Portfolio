@@ -32,6 +32,8 @@ export const NavbarContainer = styled.div`
     padding: 2rem;
     justify-content: center; 
     align-items: center;
+    overflow: hidden; // Hide overflow within the navbar container
+
     @media (min-width: 720px) { 
         width: 80%;
       }
@@ -123,7 +125,7 @@ export const Text = styled.p`
 
 export const NavHidden = styled.div`
   display: none; // Hidden by default
-  
+
   @media (min-width: 1040px) { // Show and animate on larger screens
     display: block;
     padding: 1rem 0;
