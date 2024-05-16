@@ -16,7 +16,7 @@ function App() {
   console.log(theme, toggleTheme)
 
   return (
-    <Main>
+    <Main theme={theme}>
       <GlobalStyle />
       <NavbarContainer>
         {theme === 'light' ? <LightIcon onClick={toggleTheme}/> : <DarkIcon onClick={toggleTheme}/>}

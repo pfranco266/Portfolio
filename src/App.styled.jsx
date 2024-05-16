@@ -12,8 +12,8 @@ import styled from "styled-components";
 
 export const Main = styled.section`
   display: flex;
-  background-color: #0F172A;
-  color: #3b7998;
+  background-color: ${({theme})=> theme === 'dark' ? '#0F172A' : '#f0e8d5'};
+  color: ${({theme})=> theme === 'light' ? '#0F172A' : '#3b7998'};
   flex-direction: column;
   min-height: 100vh; 
   width: 100%;
@@ -68,7 +68,8 @@ export const Container = styled.section`
 
 export const Title = styled.h3`
 margin-bottom: 5vh;
-color: #05d5c4;
+color: ${({theme})=> theme === 'light' ? 'black' : '#05d5c4'}; 
+#05d5c4;
 
 `;
 
@@ -101,7 +102,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html, body {
     height: 100%;
-    background-color: #0F172A; /* Apply background color here */
+    background-color: white; 
     color: #3b7998;
   }
 

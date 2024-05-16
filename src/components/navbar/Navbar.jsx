@@ -1,13 +1,14 @@
 import { NavbarContainer, Title, Subtitle, Text, NavHidden, NavLink, Selfie} from './Navbar.styled.jsx';
 import Contact from '../sections/Contact/Contact';
-import React from "react";
+import React, {useContext} from "react";
 import TypingEffect from '../../TypingEffect.jsx/TypingEffect.jsx';
 import selfie from "../../assets/Images/phil.webp"
-import selfiev2 from "../../assets/Images/philv2.png"
-
+import selfiev2 from "../../assets/Images/sunglasses.webp"
+import { ThemeContext } from '../../Store/ThemeContext.jsx';
 
 
 function Navbar() {
+  const {theme} = useContext(ThemeContext);
 
   function scrollToSection(sectionId) {
     const sectElement = document.getElementById(sectionId);
@@ -33,7 +34,8 @@ function Navbar() {
       <Title>
         Phillip Franco
       </Title>
-      <Selfie src={selfie} alt='animated portrait'/>
+      {theme === 'light' ? <Selfie src={selfiev2} alt='animated portrait'/> : <Selfie src={selfie} alt='animated portrait'/>}
+      
 
       <Subtitle>
         <TypingEffect text={`Web Developer`}/>
