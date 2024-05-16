@@ -520,7 +520,7 @@ display: none;
     border-radius: 10px;
     margin-right: 0.6rem;
     color: ${({theme:e})=>"#05d5c4"};
-    background-color: ${({theme:e})=>e==="light"?"#05d5c4":"rgb(28, 80, 116, 0.4);"};
+    background-color: ${({theme:e})=>e==="light"?"#3b7998":"rgb(28, 80, 116, 0.4);"};
     
 `,om=j.div`
 display: flex;
