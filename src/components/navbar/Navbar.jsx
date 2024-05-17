@@ -1,4 +1,5 @@
 import { NavbarContainer, Title, Subtitle, Text, NavHidden, NavLink, Selfie} from './Navbar.styled.jsx';
+import { LightIcon, DarkIcon } from '../../App.styled.jsx';
 import Contact from '../sections/Contact/Contact';
 import React, {useContext} from "react";
 import TypingEffect from '../../TypingEffect.jsx/TypingEffect.jsx';
@@ -8,7 +9,7 @@ import { ThemeContext } from '../../Store/ThemeContext.jsx';
 
 
 function Navbar() {
-  const {theme} = useContext(ThemeContext);
+  const {theme, toggleTheme} = useContext(ThemeContext);
 
   function scrollToSection(sectionId) {
     const sectElement = document.getElementById(sectionId);
@@ -30,6 +31,7 @@ function Navbar() {
 
   return (
     <NavbarContainer>
+        {theme === 'light' ? <LightIcon onClick={toggleTheme}/> : <DarkIcon onClick={toggleTheme}/>}
 
       <Title theme={theme}>
         Phillip Franco

@@ -35,8 +35,8 @@ export const IconContainer = styled.div`
 
 
 export const Linkedin = styled(AiOutlineLinkedin)`
-    height: 2em;
-    width: 2em;
+    height: 2.25em;
+    width: 2.25em;
     animation: ${slide} 1s ease-out forwards;
         &:hover {
         color: #005e9b;
@@ -47,8 +47,8 @@ export const Linkedin = styled(AiOutlineLinkedin)`
 `
 
 export const GitHub = styled(FaGithub)`
-    height: 2em;
-    width: 2em;
+    height: 2.25em;
+    width: 2.25em;
     animation: ${slide} 0.7s ease-out forwards;
 
     &:hover {
@@ -61,8 +61,8 @@ export const GitHub = styled(FaGithub)`
 
 
 export const Instagram = styled(IoLogoInstagram)`
-    height: 2em;
-    width: 2em;
+    height: 2.25em;
+    width: 2.25em;
     animation: ${slide} 0.5s ease-out forwards;
 
 
@@ -73,8 +73,8 @@ export const Instagram = styled(IoLogoInstagram)`
 `
 
 export const Email = styled(BiLogoGmail)`
-    height: 2em;
-    width: 2em;
+    height: 2.25em;
+    width: 2.25em;
     animation: ${slide} 0.3s ease-out forwards;
 
     &:hover {
