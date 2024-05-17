@@ -41,7 +41,7 @@ function Project({ projects, theme }) {
                 </LargeScreenContainer>
                 <TechContainer>
                     {project.tech.map((element, index) => (
-                        <TechItem theme={theme} key={index}>{element.name} <ProjectIcon theme={theme} key={index} tech={element} />
+                        <TechItem theme={theme} key={index}><ProjectIcon theme={theme} key={index} tech={element} />{element.name} 
                         </TechItem>
                     ))}
                 </TechContainer>

@@ -19,7 +19,7 @@ const projectData = [
     {
         id: 1,
         name: 'Ohana Sports',
-        description: `1 of 2 developers to design, and maintain site from scratch. Built using React, and azure functions for the backend.
+        description: `1 of 2 developers to design, and maintain site from scratch. Built using React, and Azure Functions for the backend.
         This project was my first working with another team member. We had weekly meetings with the site owner to discuss direction
         and changes necessary. I had never worked with React prior to this. This is a live site, and ongoing project. Please feel free to explore. 
         `,
@@ -63,7 +63,7 @@ const projectData = [
     {
         id: 3,
         name: 'PhilCamp',
-        description: `Easily my most robust and challenging project. This was part of a full stack web development bootcamp i took
+        description: `Easily my most robust and challenging project. This was part of a full stack web development bootcamp I took
         over the period of 6 months. Final project is a bit outdated, so while implementing, I also have to find modern solutions 
         to outdated suggestions. Learning and working with Node and express was challenging, but perhaps my favorite part of 
         my web development journey to date. If you click through to the project, please be patient, as I am using free OnRender, 

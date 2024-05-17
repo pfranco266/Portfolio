@@ -68,6 +68,9 @@ export const TechContainer = styled.div`
 `;
 
 export const TechItem = styled.p`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: .4rem;
     margin: .5rem;
     border: 1px solid black;

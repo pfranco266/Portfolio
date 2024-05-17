@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { FaArrowDown } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
+
 
 
 export const Text = styled.p`
@@ -43,7 +44,7 @@ export const DownloadButton = styled.button`
   }
 `;
 
-export const DownloadIcon = styled(FaArrowDown)`
+export const DownloadIcon = styled(FaDownload)`
    margin-left: 8px;
    transition: transform .3s; 
 
