@@ -80,12 +80,16 @@ export const Title = styled.h1`
 `;
 
 export const Selfie = styled.img`
-    width: 180px;
-    height: 180px;
+    width: 7em;
+    height: 7em;
     top: 10px;
     left: 10px;
     border-radius: 50%;
+    @media (min-width: 1040px) {
+      width: 9em;
+      height: 9em;
 
+    }
 `
 
 export const Subtitle = styled.h3`
@@ -138,14 +142,11 @@ export const Text = styled.p`
 `;
 
 
-
-
-
 export const NavHidden = styled.div`
   display: none; // Hidden by default
   animation: ${slideIn} 0.5s ease-out forwards; // Apply the animation
 
-  @media (min-width: 1040px) { // Show and animate on larger screens
+  @media (min-width: 968px) { // Show and animate on larger screens
     display: flex;
     justify-content: space-around; 
     width: 100%;

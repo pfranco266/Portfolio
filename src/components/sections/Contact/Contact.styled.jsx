@@ -24,10 +24,9 @@ export const IconContainer = styled.div`
     justify-content: space-between;
     height: 10vh;
     width: 90%;
-    overflow: hidden; // hide  the overflow within the navbar container w/ animation
     z-index: 10;
     margin-top: 1rem;
-    @media (min-width: 1040px) {
+    @media (min-width: 968px) {
         width: 80%
         
       }
@@ -76,7 +75,6 @@ export const Instagram = styled(IoLogoInstagram)`
 export const Email = styled(BiLogoGmail)`
     height: 2em;
     width: 2em;
-    overflow: hidden; // Hide overflow within the navbar container
     animation: ${slide} 0.3s ease-out forwards;
 
     &:hover {
