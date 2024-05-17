@@ -1,6 +1,6 @@
 import './App.css'
 import { GlobalStyle, Main, ContentContainer, NavbarContainer, DarkIcon, LightIcon } from './App.styled.jsx';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 
 // import Contact from './components/sections/Contact/Contact';
 import Navbar from './components/navbar/Navbar';
@@ -14,14 +14,37 @@ function App() {
 
   const {theme} = useContext(ThemeContext);
 
+  const contentContainerRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      if (contentContainerRef.current) {
+        contentContainerRef.current.scrollTop += event.deltaY;
+      }
+    };
+
+    const navbarContainer = document.getElementById('navbar-container');
+    if (navbarContainer) {
+      navbarContainer.addEventListener('wheel', handleScroll);
+    }
+
+    return () => {
+      if (navbarContainer) {
+        navbarContainer.removeEventListener('wheel', handleScroll);
+      }
+    };
+  }, []);
+
+
+
   return (
     <Main theme={theme}>
       <GlobalStyle />
-      <NavbarContainer>
+      <NavbarContainer id="navbar-container">
         
         <Navbar />
       </NavbarContainer>
-      <ContentContainer id='contentContainer'>
+      <ContentContainer id="contentContainer" ref={contentContainerRef}>
         
         <Experiences />
         <Projects />
