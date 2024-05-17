@@ -1,5 +1,5 @@
 // External imports
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 
 // Internal component imports
 import Experience from "./Experience";
@@ -17,8 +17,14 @@ import { ThemeContext } from "../../../Store/ThemeContext.jsx";
 
 function Experiences() {
   const {theme} = useContext(ThemeContext);
-        
+
+    const [clicked, setClicked] = useState(false);
+
     function trackResumeDownload(resumeName) {
+      console.log(clicked);
+      setClicked((prev) => {
+        return prev === false ? true : false;
+      })
         if (window.gtag) {
           window.gtag('event', 'download', {
             event_category: 'Resume',
@@ -26,6 +32,7 @@ function Experiences() {
           });
         }
       }
+
         return (
             <Container id="experiences">
                 <Title theme={theme}>EXPERIENCE</Title>

@@ -18,6 +18,8 @@ export const Main = styled.section`
   min-height: 100vh; 
   width: 100%;
 
+  
+
   @media (min-width: 1040px) {
     display: flex;
     flex-direction: row; 

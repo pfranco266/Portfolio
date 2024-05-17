@@ -47,6 +47,7 @@ export const DownloadButton = styled.button`
 export const DownloadIcon = styled(FaDownload)`
    margin-left: 8px;
    transition: transform .3s; 
+   font-size: 1rem;
 
     ${DownloadButton}:active & {
     color: #FFDF22; 
