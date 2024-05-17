@@ -25,10 +25,12 @@ const projectData = [
         `,
         tech: [{
             name: 'React',
-            icon: FaReact
+            icon: FaReact, 
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
         }, {
             name: 'Styled Components',
-            icon: SiStyledcomponents
+            icon: SiStyledcomponents, 
+            
         }, {
             name: 'Azure Functions',
             icon: SiAzurefunctions
@@ -47,12 +49,16 @@ const projectData = [
         tech: [{
             name: 'HTML',
             icon: FaHtml5,
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg',
+
         }, {
             name: 'Vanilla Javascript',
-            icon: IoLogoJavascript
+            icon: IoLogoJavascript, 
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
         }, {
             name: 'Netlify',
-            icon: SiNetlify
+            icon: SiNetlify, 
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original-wordmark.svg" ,
         }, {
             name: 'Leaflet',
             icon: SiLeaflet
@@ -71,9 +77,13 @@ const projectData = [
         tech: [{
             name: 'HTML',
             icon: FaHtml5,
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg',
+
         }, {
             name: 'Vanilla Javascript',
-            icon: IoLogoJavascript
+            icon: IoLogoJavascript, 
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+
         }, {
             name: 'EJS',
 
@@ -83,12 +93,15 @@ const projectData = [
         }, {
             name: 'Express',
             icon: SiExpress,
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
         }, {
             name: 'MongoDB',
             icon: DiMongodb,
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
         }, {
             name: 'Bootstrap',
             icon: FaBootstrap,
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" 
         }, {
             name: 'Render',
         }, {
