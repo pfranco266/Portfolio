@@ -28,7 +28,7 @@ export const DownloadButton = styled.button`
   justify-content: center; // Center items horizontally
   background-color: ${({theme})=> theme === 'light' ? '#3b7998' : '#1e1e1e'};
   transition: transform .2s, box-shadow .2s;
-    color: #05d5c4;
+  color: #fb9062;
     border-color: #05d5c4;
   &:hover {
     transform: translateY(-2px);
