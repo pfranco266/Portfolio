@@ -23,7 +23,7 @@ export const ProjectContainer = styled.div`
 
     &:hover {
         cursor: pointer;
-        box-shadow: 0 0 0 2px orange; /* Simulate border with box-shadow */
+        box-shadow: 0 0 0 2px #fb9062; 
         ${Subtitle} {
             color: #05d5c4;
         }

@@ -22,10 +22,10 @@ export const IconContainer = styled.div`
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    height: 5vh;
+    height: 10vh;
     width: 90%;
     overflow: hidden; // hide  the overflow within the navbar container w/ animation
-
+    z-index: 10;
     margin-top: 1rem;
     @media (min-width: 1040px) {
         width: 80%
@@ -36,31 +36,34 @@ export const IconContainer = styled.div`
 
 
 export const Linkedin = styled(AiOutlineLinkedin)`
-    height: 2rem;
-    width: 2rem;
+    height: 2em;
+    width: 2em;
     animation: ${slide} 1s ease-out forwards;
         &:hover {
         color: #005e9b;
         box-shadow: 0 4px 3px -4px ${({theme})=> theme === 'light' ? '#1e1e1e' : '#f1f1f1'};
 
     }
+    
 `
 
 export const GitHub = styled(FaGithub)`
-    height: 2rem;
-    width: 2rem;
+    height: 2em;
+    width: 2em;
     animation: ${slide} 0.7s ease-out forwards;
 
     &:hover {
         color: #333333;
         box-shadow: 0 4px 3px -4px ${({theme})=> theme === 'light' ? '#1e1e1e' : '#f1f1f1'};
     }
+
+
 `;
 
 
 export const Instagram = styled(IoLogoInstagram)`
-    height: 2rem;
-    width: 2rem;
+    height: 2em;
+    width: 2em;
     animation: ${slide} 0.5s ease-out forwards;
 
 
@@ -71,8 +74,8 @@ export const Instagram = styled(IoLogoInstagram)`
 `
 
 export const Email = styled(BiLogoGmail)`
-    height: 2rem;
-    width: 2rem;
+    height: 2em;
+    width: 2em;
     overflow: hidden; // Hide overflow within the navbar container
     animation: ${slide} 0.3s ease-out forwards;
 
