@@ -69,7 +69,7 @@ export const TechContainer = styled.div`
     flex-wrap: wrap;
 `;
 
-export const TechItem = styled.p`
+export const TechItem = styled.img`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,9 +78,10 @@ export const TechItem = styled.p`
     border: 1px solid black;
     border-radius: 10px;
     margin-right: 0.6rem;
-    color: ${({theme})=> theme === 'light' ? '#05d5c4' : '#05d5c4'};
-    background-color: ${({theme})=> theme === 'light' ? '#3b7998' : 'rgb(28, 80, 116, 0.4);'};
-    
+    // color: ${({theme})=> theme === 'light' ? '#05d5c4' : '#05d5c4'};
+    // background-color: ${({theme})=> theme === 'light' ? '#3b7998' : 'rgb(28, 80, 116, 0.4);'};
+    height: 3em;
+    width: 3em;
 `;
 
 

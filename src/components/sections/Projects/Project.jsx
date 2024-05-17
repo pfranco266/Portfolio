@@ -14,7 +14,6 @@ function Project({ projects, theme }) {
         });
         window.location.href = projectUrl;
     };
-    console.log('lalala', theme)
 
     const listItems = projects.map((project) => (
         <ProjectContainer key={project.id} theme={theme}>
@@ -41,8 +40,8 @@ function Project({ projects, theme }) {
                 </LargeScreenContainer>
                 <TechContainer>
                     {project.tech.map((element, index) => (
-                        <TechItem theme={theme} key={index}><ProjectIcon theme={theme} key={index} tech={element} />{element.name} 
-                        </TechItem>
+                        <TechItem src={element.icon} theme={theme} key={index}/>
+                        
                     ))}
                 </TechContainer>
                 
