@@ -17,7 +17,7 @@ function Project({ projects, theme }) {
     console.log('lalala', theme)
 
     const listItems = projects.map((project) => (
-        <ProjectContainer key={project.id}>
+        <ProjectContainer key={project.id} theme={theme}>
             <a href={`${project.website}`} onClick={(e) => trackProjectClick(project.name, project.website, e)} target="_blank" rel="noopener noreferrer">
 
                 <LargeScreenContainer>

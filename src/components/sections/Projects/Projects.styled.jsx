@@ -13,12 +13,14 @@ export const ProjectContainer = styled.div`
     align-items: start;
     margin-bottom: 3rem;
     padding: 10px;
-    border: 2px solid transparent; /* Add transparent border to maintain layout */
-    border-radius: 10px; /* Maintain border-radius */
+    // background-color: rgb(251,144,98, .2);
+    // background-color: rgb(5,213,196, .2);
+    background-color: ${({theme})=> theme === 'light' ? 'rgb(251,144,98, .3)' : 'rgb(251,144,98, .1)'};
+
+    border: 2px solid transparent; 
+    border-radius: 10px; 
     @media (min-width: 1040px) {
         flex-direction: row;
-    
-
       }
 
     &:hover {
