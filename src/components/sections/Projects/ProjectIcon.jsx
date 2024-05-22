@@ -1,23 +1,18 @@
-import React from "react"
-import projectData from "./projectData"
-import {Smalltext} from './Projects.styled'
+import React from "react";
+import {  TechItem } from './Projects.styled';
+
+function ProjectIcon({ pic }) {
+  console.log(pic)
 
 
+  return (
+    <>
+  
 
+      <TechItem src={pic} alt="Project Icon" />
 
-function ProjectIcon ({tech}) {
-    const IconComponent = tech.icon
-
-    return (
-        
-      <>
-     
-       {IconComponent ? <IconComponent /> : <Smalltext>(No icon available)</Smalltext>}
-
-       </>
-
-     
-    )
+    </>
+  );
 }
 
 export default ProjectIcon;

@@ -1,5 +1,15 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
+const spinny = keyframes`
+ 
+0% {
+    transform: rotate(0deg)
+ }
+
+ 100% {
+    transform: rotate(360deg)
+ }
+`
 
 export const Subtitle = styled.h4`
 color: ${({theme})=> theme === 'light' ? '#3b7998' : '#3b7998'};
@@ -67,10 +77,13 @@ export const TechContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    position: relative;
 `;
 
 export const TechItem = styled.img`
     display: flex;
+    top: 1%;
+    left: 1%;
     flex-direction: column;
     align-items: center;
     padding: .4rem;
@@ -82,6 +95,7 @@ export const TechItem = styled.img`
     // background-color: ${({theme})=> theme === 'light' ? '#3b7998' : 'rgb(28, 80, 116, 0.4);'};
     height: 3em;
     width: 3em;
+    z-index: 999;
 `;
 
 
@@ -99,3 +113,4 @@ display: flex;
 export const Smalltext = styled.p`
   font-size: 8px;
 `
+

@@ -16,14 +16,18 @@ function App() {
 
   const contentContainerRef = useRef(null);
 
+ 
+
   useEffect(() => {
     const handleScroll = (event) => {
       if (contentContainerRef.current) {
+        console.log(contentContainerRef)
+
         contentContainerRef.current.scrollTop += event.deltaY;
       }
     };
 
-    const navbarContainer = document.getElementById('navbar-container');
+    const navbarContainer = document.getElementById('navbarContainer');
     if (navbarContainer) {
       navbarContainer.addEventListener('wheel', handleScroll);
     }
@@ -40,7 +44,7 @@ function App() {
   return (
     <Main theme={theme}>
       <GlobalStyle />
-      <NavbarContainer id="navbar-container">
+      <NavbarContainer id="navbarContainer">
         
         <Navbar />
       </NavbarContainer>
