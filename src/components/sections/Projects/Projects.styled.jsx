@@ -92,6 +92,7 @@ const rotate = keyframes`
   }
     `
     export const TechContainer = styled.div`
+    margin-top: 1rem;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
