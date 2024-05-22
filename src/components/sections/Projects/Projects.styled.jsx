@@ -64,27 +64,8 @@ display: none;
   }
 `;
 
-export const TechContainer = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    position: relative;
-`;
 
-export const TechItem = styled.img`
-    display: flex;
 
-    flex-direction: column;
-    align-items: center;
-    padding: .4rem;
-    margin: .5rem;
-    margin-right: 0.6rem;
-    // color: ${({theme})=> theme === 'light' ? '#05d5c4' : '#05d5c4'};
-    // background-color: ${({theme})=> theme === 'light' ? '#3b7998' : 'rgb(28, 80, 116, 0.4);'};
-    height: 3em;
-    width: 3em;
-    z-index: 999;
-`;
 
 
 
@@ -110,17 +91,32 @@ const rotate = keyframes`
     transform: rotate(360deg);
   }
     `
+    export const TechContainer = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 1em 3em;
+`;
 
+export const TechItem = styled.img`
+    object-fit: contain;
+    margin: 0.5rem;
+    height: 3em;
+    width: 3em; 
+    z-index: 999;
+     flex: 1 1 calc(20% - 1rem); /* Adjust flex-basis to control the item size */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+`;
 
     
     
     export const Spinner = styled.div`
 	position: relative;
 	z-index: 0;
-	width: 3em;
-	height: 3em;
+    
 	overflow: hidden;
-	padding: 2rem;
+	padding: .5em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
