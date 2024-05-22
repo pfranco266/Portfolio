@@ -114,8 +114,9 @@ export const TechItem = styled.img`
     
     export const Spinner = styled.div`
 	position: relative;
+    border-radius: 10px;
+
 	z-index: 0;
-    
 	overflow: hidden;
 	padding: .5em;
 	display: flex;
@@ -127,23 +128,21 @@ export const TechItem = styled.img`
 		content: '';
 		position: absolute;
 		z-index: -2;
-		left: -50%;
-		top: -50%;
-		width: 200%;
-		height: 200%;
-		background-size: 50% 50%, 50% 50%;
-		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-        background-image: linear-gradient(#05d5c4, white), linear-gradient(#05d5c4, white), linear-gradient(#05d5c4, white), linear-gradient(#05d5c4, white);
-		animation: ${rotate} 4s linear infinite;
+        transform: translate(-50%, -50%); 
+        border-radius: 1px;
+	
+		width: 50%;
+		height: 250%;
+        background-color: #05d5c4;
+        animation: ${rotate} 7s linear infinite;
 	}
 	
 	&::after {
 		content: '';
 		position: absolute;
 		z-index: -1;
-	
-		width: calc(100% - 12px);
-		height: calc(100% - 12px);
+        width: calc(100% - 10px);
+		height: calc(100% - 10px);
 		background: #0F172A;
 		border-radius: 5px;
 	}
