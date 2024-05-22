@@ -1,15 +1,6 @@
 import styled, {keyframes} from "styled-components";
 
-const spinny = keyframes`
- 
-0% {
-    transform: rotate(0deg)
- }
 
- 100% {
-    transform: rotate(360deg)
- }
-`
 
 export const Subtitle = styled.h4`
 color: ${({theme})=> theme === 'light' ? '#3b7998' : '#3b7998'};
@@ -82,14 +73,11 @@ export const TechContainer = styled.div`
 
 export const TechItem = styled.img`
     display: flex;
-    top: 1%;
-    left: 1%;
+
     flex-direction: column;
     align-items: center;
     padding: .4rem;
     margin: .5rem;
-    border: 1px solid black;
-    border-radius: 10px;
     margin-right: 0.6rem;
     // color: ${({theme})=> theme === 'light' ? '#05d5c4' : '#05d5c4'};
     // background-color: ${({theme})=> theme === 'light' ? '#3b7998' : 'rgb(28, 80, 116, 0.4);'};
@@ -114,3 +102,52 @@ export const Smalltext = styled.p`
   font-size: 8px;
 `
 
+const rotate = keyframes`
+0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+    `
+
+
+    
+    
+    export const Spinner = styled.div`
+	position: relative;
+	z-index: 0;
+	width: 3em;
+	height: 3em;
+	overflow: hidden;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		background-size: 50% 50%, 50% 50%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+        background-image: linear-gradient(#05d5c4, white), linear-gradient(#05d5c4, white), linear-gradient(#05d5c4, white), linear-gradient(#05d5c4, white);
+		animation: ${rotate} 4s linear infinite;
+	}
+	
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+	
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: #0F172A;
+		border-radius: 5px;
+	}
+    `;

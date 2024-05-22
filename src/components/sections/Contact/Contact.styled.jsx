@@ -21,6 +21,7 @@ export const slide = keyframes`
 export const IconContainer = styled.div`
     display: flex; 
     flex-direction: row;
+    position: relative;
     justify-content: space-between;
     height: 10vh;
     width: 90%;
@@ -30,6 +31,9 @@ export const IconContainer = styled.div`
         width: 80%
         
       }
+
+
+
 `
 
 
@@ -70,6 +74,7 @@ export const Instagram = styled(IoLogoInstagram)`
        color: #FD1D1D;
        box-shadow: 0 4px 3px -4px ${({theme})=> theme === 'light' ? '#1e1e1e' : '#f1f1f1'};
     }
+
 `
 
 export const Email = styled(BiLogoGmail)`

@@ -15,6 +15,7 @@ export const ExpSection = styled.section`
     width: 100%;
     height: auto;
     margin-bottom: .75rem;
+
 `;
 
 export const DownloadButton = styled.button`

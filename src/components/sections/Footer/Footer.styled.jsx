@@ -13,7 +13,7 @@ export const StyledFooter = styled.footer`
     height: auto;
     padding-top: 1vh;
     position: relative;
-    
+
 `;
 
 export const RocketIcon = styled(BsRocket)`
@@ -26,6 +26,8 @@ export const RocketIcon = styled(BsRocket)`
         cursor: pointer;
         color: #05d5c4;
     }
+
+
     
 `;
 
@@ -56,6 +58,7 @@ export const RocketContainer = styled.div`
         top: -5px;
         left: 105%;
     }
+
 `;
 
 export const Message = styled.div`
