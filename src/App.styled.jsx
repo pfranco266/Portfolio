@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { MdOutlineLightMode } from "react-icons/md";
 import { CiCloudMoon } from "react-icons/ci";
+import { darkTheme, lightTheme } from './Styles';
 
 
 import styled from "styled-components";
@@ -12,8 +13,8 @@ import styled from "styled-components";
 
 export const Main = styled.section`
   display: flex;
-  background-color: ${({ theme }) => theme === 'dark' ? '#0F172A' : '#f0e8d5'};
-  color: ${({ theme }) => theme === 'light' ? '#3b7998' : '#3b7998'};
+  background-color: ${({ theme }) => theme === 'dark' ? darkTheme.background : lightTheme.background};
+  color: ${({ theme }) => theme === 'light' ? lightTheme.text : darkTheme.text};
   flex-direction: column;
   min-height: 100vh; 
   width: 100%;
@@ -70,14 +71,14 @@ export const Container = styled.section`
 
 export const Title = styled.h3`
 margin-bottom: 5vh;
-color: ${({ theme }) => theme === 'light' ? 'black' : '#05d5c4'}; 
+color: ${({ theme }) => theme === 'light' ? lightTheme.primary : darkTheme.primary}; 
 #05d5c4;
 
 `;
 
 export const Subtitle = styled.h4`
     padding: 2.5vh 0;
-    color: ${({ theme }) => theme === 'light' ? 'black' : '#05d5c4'}; 
+    color: ${({theme})=> theme === 'light' ? lightTheme.secondary : darkTheme.secondary}; 
 
 `
 

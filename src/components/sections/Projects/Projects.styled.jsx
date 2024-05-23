@@ -1,4 +1,5 @@
 import styled, {keyframes} from "styled-components";
+import { darkTheme, lightTheme } from "../../../Styles";
 
 
 
@@ -14,9 +15,8 @@ export const ProjectContainer = styled.div`
     align-items: start;
     margin-bottom: 3rem;
     padding: 10px;
-    // background-color: rgb(251,144,98, .2);
-    // background-color: rgb(5,213,196, .2);
-    background-color: ${({theme})=> theme === 'light' ? 'rgb(251,144,98, .3)' : 'rgb(251,144,98, .1)'};
+
+    background-color: ${({theme})=> theme === 'light' ? lightTheme.secondaryBackground : darkTheme.secondaryBackground};
 
     border: 2px solid transparent; 
     border-radius: 10px; 

@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { lightTheme, darkTheme } from '../Styles';
 
 // Keyframes for the typing animation using clip-path
 const typing = keyframes`
@@ -9,12 +10,12 @@ const typing = keyframes`
 // Keyframes for the cursor blinking effect
 const blinkCaret = keyframes`
   from, to { border-color: transparent; }
-  50% { border-color: orange; }
+  50% { border-color: black; }
 `;
 
 export const Typewriter = styled.p`
   overflow: hidden; 
-  border-right: .15em solid orange; 
+  border-right: .15em solid black; 
   white-space: nowrap; 
   margin: 0 auto; 
   letter-spacing: .2em; 

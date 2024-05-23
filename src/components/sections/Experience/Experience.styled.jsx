@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaDownload } from "react-icons/fa";
+import { darkTheme, lightTheme } from "../../../Styles";
 
 
 
@@ -27,10 +28,10 @@ export const DownloadButton = styled.button`
   display: flex; // Use flexbox to center the icon and text
   align-items: center; // Center items vertically
   justify-content: center; // Center items horizontally
-  background-color: ${({theme})=> theme === 'light' ? '#3b7998' : '#1e1e1e'};
+  background-color: ${({theme})=> theme === 'light' ? lightTheme.primary : darkTheme.primary};
+  color: ${({ theme }) => theme === 'light' ? lightTheme.background : darkTheme.background};
   transition: transform .2s, box-shadow .2s;
-  color: #fb9062;
-    border-color: #05d5c4;
+  border-color: #05d5c4;
   &:hover {
     transform: translateY(-2px);
     box-shadow: 1px 5px 5px ${({theme})=> theme === 'light' ? '#1e1e1e' : '#05d5c4'};
@@ -49,6 +50,7 @@ export const DownloadIcon = styled(FaDownload)`
    margin-left: 8px;
    transition: transform .3s; 
    font-size: 1rem;
+   
 
     ${DownloadButton}:active & {
     color: #FFDF22; 
