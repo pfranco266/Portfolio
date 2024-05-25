@@ -1,22 +1,37 @@
-
-
 export const lightTheme = {
-    primary: '#1E90FF',
-    secondary: '#7F00FF',
-    background: '#FAFAFA',
-    text: '#20232A',
-    accent: '#FF6F61',
-    secondaryBackground: '#E0E0E0', // Slightly darker than main light background
-  };
+    primary: '#96D2B8', // Inverse of #69D2E7
+    secondary: '#585647', // Inverse of #A7DBD8
+    background: '#FFFFFF', // White (inverse of black)
+    text: '#1F1B33', // Inverse of #E0E4CC
+    accent: '#0C7ECF', // Inverse of #F38630
+    secondaryBackground: '#D0B0B0', // Inverse of #2F4F4F
+};
+
+export const darkTheme = {
+    primary: '#69D2E7', // Light Blue (aoiby heartvine)
+    secondary: '#A7DBD8', // Mint Green (Clean Pondwater)
+    background: '#000000', // Black
+    text: '#E0E4CC', // Light Beige (beach storm)
+    accent: '#F38630', // Orange (Giant Goldfish)
+    secondaryBackground: '#2F4F4F', // Dark Slate Gray
+};
+// export const lightTheme = {
+//     primary: '#1E90FF',
+//     secondary: '#7F00FF',
+//     background: '#FAFAFA',
+//     text: '#20232A',
+//     accent: '#FF6F61',
+//     secondaryBackground: '#E0E0E0', // Slightly darker than main light background
+//   };
   
-  export const darkTheme = {
-    primary: '#00FF99',
-    secondary: '#7F00FF',
-    background: '#20232A',
-    text: '#FFFFFF',
-    accent: '#FF6F61',
-    secondaryBackground: '#2A2E38', // Slightly lighter than main dark background
-  };
+//   export const darkTheme = {
+//     primary: '#00FF99',
+//     secondary: '#7F00FF',
+//     background: '#20232A',
+//     text: '#FFFFFF',
+//     accent: '#FF6F61',
+//     secondaryBackground: '#2A2E38', // Slightly lighter than main dark background
+//   };
 
 
 

@@ -20,7 +20,7 @@ export const ExpSection = styled.section`
 `;
 
 export const DownloadButton = styled.button`
-  height: 4rem;
+  height: 3rem;
   width: 10rem;
   font-weight: bold;
   border: 1px solid black;
@@ -34,7 +34,7 @@ export const DownloadButton = styled.button`
   border-color: #05d5c4;
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 1px 5px 5px ${({theme})=> theme === 'light' ? '#1e1e1e' : '#05d5c4'};
+    box-shadow: 1px 5px 5px ${({ theme }) => theme === 'light' ? lightTheme.primary : darkTheme.primary};
     cursor: pointer;
     // Apply a downward movement to the entire button
     

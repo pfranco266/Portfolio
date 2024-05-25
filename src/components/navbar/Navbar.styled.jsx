@@ -168,7 +168,7 @@ export const NavLink = styled.a`
   /* Styles for your navigation links */
   display: block; // Example: Makes each link a block element for vertical stacking
   padding: .5em 0; // Example: Adds some padding above and below each link
-  color: ${({theme})=> theme === 'light' ? lightTheme.accent : darkTheme.accent}; 
+  color: ${({theme})=> theme === 'light' ? lightTheme.primary : darkTheme.primary}; 
   border-bottom: 0px solid transparent; /* Add transparent border to maintain layout */
   transition: border-color 0.3s; /* Smooth transition for the border color */
   text-decoration: none; // Removes underline from links

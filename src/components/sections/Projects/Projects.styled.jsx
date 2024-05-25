@@ -7,6 +7,7 @@ export const Subtitle = styled.h4`
 color: ${({theme})=> theme === 'light' ? '#3b7998' : '#3b7998'};
 padding: 2.5vh 0;
     
+background-color: magenta;
 `;
 
 export const ProjectContainer = styled.div`
@@ -133,7 +134,7 @@ export const TechItem = styled.img`
 	
 		width: 50%;
 		height: 250%;
-        background-color: #05d5c4;
+        background-color: ${lightTheme.accent};
         animation: ${rotate} 7s linear infinite;
 	}
 	

@@ -69,10 +69,12 @@ export const Container = styled.section`
       }
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h2`
 margin-bottom: 5vh;
 color: ${({ theme }) => theme === 'light' ? lightTheme.primary : darkTheme.primary}; 
-#05d5c4;
+// #05d5c4;
+text-transform: capitalize;
+letter-spacing: 5px;
 
 `;
 

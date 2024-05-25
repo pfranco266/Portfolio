@@ -1,7 +1,7 @@
 import { NavbarContainer, Title, Subtitle, Text, NavHidden, NavLink, Selfie} from './Navbar.styled.jsx';
 import { LightIcon, DarkIcon } from '../../App.styled.jsx';
 import Contact from '../sections/Contact/Contact';
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import TypingEffect from '../../TypingEffect.jsx/TypingEffect.jsx';
 import selfie from "../../assets/Images/phil.webp"
 import selfiev2 from "../../assets/Images/sunglasses.webp"
@@ -10,6 +10,7 @@ import { ThemeContext } from '../../Store/ThemeContext.jsx';
 
 function Navbar() {
   const {theme, toggleTheme} = useContext(ThemeContext);
+  const [isActive, setIsActive] = useState(false);
 
   function scrollToSection(sectionId) {
     const sectElement = document.getElementById(sectionId);
