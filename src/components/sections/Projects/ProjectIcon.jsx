@@ -2,7 +2,6 @@ import React from "react";
 import {  TechItem, Spinner } from './Projects.styled';
 
 function ProjectIcon({ pic }) {
-  console.log(pic)
 
 
   return (

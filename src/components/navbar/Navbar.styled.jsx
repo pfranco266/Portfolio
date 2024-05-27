@@ -165,14 +165,14 @@ export const NavLink = styled.a`
   display: block; // Example: Makes each link a block element for vertical stacking
   padding: .5em 0; // Example: Adds some padding above and below each link
   color: ${({theme})=> theme === 'light' ? lightTheme.primary : darkTheme.primary}; 
-  border-bottom: 0px solid transparent; /* Add transparent border to maintain layout */
+  box-shadow: ${({ isActive }) => (isActive ? `0 2px 0 0px ${lightTheme.accent}` : 'none')};
   transition: border-color 0.3s; /* Smooth transition for the border color */
   text-decoration: none; // Removes underline from links
   cursor: pointer;
   &:hover {
     color: ${({theme})=> theme === 'light' ? lightTheme.secondary : darkTheme.secondary}; 
-    box-shadow: 0 2px 0 0px #fb9062; /* Simulate border with box-shadow */
-    width: fit-content;    
+    box-shadow: 0 2px 0 0px #f1f1f1;
+
   }
   @media (min-width: 1040px) {
     font-size: 1em;

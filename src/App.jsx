@@ -28,51 +28,67 @@ function App() {
 
  
 
-  useEffect(() => {
+//   useEffect(() => {
     
-    const scrollPosition = window.scrollY;
+// const scrollPosition = 0;
+
+  
+//     // console.log('Scroll Position:', scrollPosition);
+//     // console.log('Window Height:', window.innerHeight);
+//     // console.log('Active Section:', isActive);
+
+    
+
+//     if (scrollPosition >= aboutPos - majorityHeight) {
+//       setIsActive('about');
+//     } else if (scrollPosition >= projectPos - majorityHeight && scrollPosition < aboutPos) {
+//       setIsActive('projects');
+//     } else if (scrollPosition >= experiencePos - majorityHeight && scrollPosition < projectPos) {
+//       setIsActive('experience');
+//     }
+  
+//   }, []);
+
+  
+useEffect(() => {
+  const handleScroll = () => {
+    const majorityHeight = window.innerHeight / 2;
     const experiencePos = experienceRef.current.offsetTop;
     const projectPos = projectRef.current.offsetTop;
     const aboutPos = aboutRef.current.offsetTop;
-    const majorityHeight = window.innerHeight / 2;
 
-    console.log('Experience Position:', experiencePos);
-    console.log('Projects Position:', projectPos);
-    console.log('About Position:', aboutPos);
-    console.log('Scroll Position:', scrollPosition);
-    console.log('Window Height:', window.innerHeight);
-    console.log('Active Section:', isActive);
+    const scrollPosition = contentContainerRef.current.scrollTop + majorityHeight;
 
-    if (scrollPosition >= aboutPos - majorityHeight) {
-      setIsActive('about');
-    } else if (scrollPosition >= projectPos - majorityHeight && scrollPosition < aboutPos) {
-      setIsActive('projects');
-    } else if (scrollPosition >= experiencePos - majorityHeight && scrollPosition < projectPos) {
+    if (scrollPosition >= experiencePos && scrollPosition < projectPos) {
       setIsActive('experience');
-    }
-  
-  }, []);
-
-  
-
-  useEffect(() => {
-    const handleScroll = (event) => {
-      if (contentContainerRef.current) {
-        contentContainerRef.current.scrollTop += event.deltaY;
-      }
-    };
-    const navbarContainer = document.getElementById('navbarContainer');
-    if (navbarContainer) {
-      navbarContainer.addEventListener('wheel', handleScroll);
+    } else if (scrollPosition >= projectPos && scrollPosition < aboutPos) {
+      setIsActive('project');
+    } else if (scrollPosition >= aboutPos) {
+      setIsActive('about');
     }
 
-    return () => {
-      if (navbarContainer) {
-        navbarContainer.removeEventListener('wheel', handleScroll);
-      }
-    };
-  }, []);
+    console.log('Scroll Position:', scrollPosition);
+  };
 
+  const handleWheel = (event) => {
+    if (contentContainerRef.current) {
+      contentContainerRef.current.scrollTop += event.deltaY;
+    }
+  };
+
+  const contentContainer = contentContainerRef.current;
+  if (contentContainer) {
+    contentContainer.addEventListener('scroll', handleScroll);
+    window.addEventListener('wheel', handleWheel);
+  }
+
+  return () => {
+    if (contentContainer) {
+      contentContainer.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('wheel', handleWheel);
+    }
+  };
+}, []);
 
 
 
@@ -103,3 +119,49 @@ export default App;
 
 
 
+// useEffect(() => {
+//   const handleScroll = (event) => {
+//     const majorityHeight = window.innerHeight / 2;
+//     const experiencePos = experienceRef.current.offsetTop;
+//     const projectPos = projectRef.current.offsetTop;
+//     const aboutPos = aboutRef.current.offsetTop;
+//     console.log('Experience Position:', experiencePos);
+//     console.log('Projects Position:', projectPos);
+//     console.log('About Position:', aboutPos);
+
+
+//     // scroll behavior logic: 
+//     if (contentContainerRef.current) {
+//       contentContainerRef.current.scrollTop += event.deltaY;
+     
+//   };
+//     // scrolltrack logic 
+//     if(contentContainerRef.current.scrollTop >= experiencePos - majorityHeight && contentContainerRef.current.scrollTop < projectPos) {
+//       setIsActive('experience')        
+//     }
+//     if(contentContainerRef.current.scrollTop >= projectPos - majorityHeight && contentContainerRef.current.scrollTop < aboutPos) {
+//       setIsActive('project')        
+//     }
+//     if(contentContainerRef.current.scrollTop >= aboutPos - majorityHeight) {
+//       setIsActive('about')        
+//   }
+
+//   console.log('contentScrolltop, eventDetlaY', contentContainerRef.current.scrollTop, event.deltaY)
+// }
+
+
+
+
+
+// // scroll behavior logic
+//   const navbarContainer = document.getElementById('navbarContainer');
+//   if (navbarContainer) {
+//     navbarContainer.addEventListener('wheel', handleScroll);
+//   }
+
+//   return () => {
+//     if (navbarContainer) {
+//       navbarContainer.removeEventListener('wheel', handleScroll);
+//     }
+//   };
+// }, []);

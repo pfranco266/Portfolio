@@ -50,7 +50,7 @@ function Navbar({isActive}) {
         <NavLink isActive={isActive === 'experience'} theme={theme} aria-label="Scroll to experiences section" onClick={(e) => trackLinkClick(e, 'experiences')}>
           - - - Experience
         </NavLink>
-        <NavLink isActive={isActive === 'projects'} theme={theme} aria-label="Scroll to project section" onClick={(e) => trackLinkClick(e, 'projects')}>
+        <NavLink isActive={isActive === 'project'} theme={theme} aria-label="Scroll to project section" onClick={(e) => trackLinkClick(e, 'projects')}>
           - - - Projects
         </NavLink>
         <NavLink isActive={isActive === 'about'} theme={theme} aria-label="Scroll to about section" onClick={(e) => trackLinkClick(e, 'about')}>
