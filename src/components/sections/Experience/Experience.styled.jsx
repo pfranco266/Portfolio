@@ -34,7 +34,7 @@ export const DownloadButton = styled.button`
   border-color: #05d5c4;
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 1px 5px 5px ${({ theme }) => theme === 'light' ? lightTheme.primary : darkTheme.primary};
+    box-shadow: 2px 6px 6px ${({ theme }) => theme === 'light' ? lightTheme.primary : darkTheme.primary};
     cursor: pointer;
     // Apply a downward movement to the entire button
     

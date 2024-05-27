@@ -1,37 +1,47 @@
+
+
+// i like these colors, but have to switch up how they are displayed (title doesn't show up)
 export const lightTheme = {
-    primary: '#96D2B8', // Inverse of #69D2E7
-    secondary: '#585647', // Inverse of #A7DBD8
-    background: '#FFFFFF', // White (inverse of black)
-    text: '#1F1B33', // Inverse of #E0E4CC
-    accent: '#0C7ECF', // Inverse of #F38630
-    secondaryBackground: '#D0B0B0', // Inverse of #2F4F4F
+  primary: ' #0f0f0f', // White
+  secondary: '#ff66b2', // Soft pink
+  background: '#f5f5f5', // Very light gray
+  text: '#333333', // Dark gray
+  accent: '#00bfff', // Sky blue
+  secondaryBackground: '#e0e0e0', // Light gray
 };
 
 export const darkTheme = {
-    primary: '#69D2E7', // Light Blue (aoiby heartvine)
-    secondary: '#A7DBD8', // Mint Green (Clean Pondwater)
-    background: '#000000', // Black
-    text: '#E0E4CC', // Light Beige (beach storm)
-    accent: '#F38630', // Orange (Giant Goldfish)
-    secondaryBackground: '#2F4F4F', // Dark Slate Gray
+  primary: '#ffffff', // Very dark gray
+  secondary: '#ff007f', // Vibrant pink
+  background: '#0a0a0a', // Almost black
+  text: '#e0e0e0', // Light gray
+  accent: '#00ffff', // Cyan
+  secondaryBackground: '#1a1a1a', // Dark gray
 };
+
+
+
+
+
+////////////////////////////////////// i like these colors, but have to switch up how they are displayed (title doesn't show up)
+// pre swapped color scheme
 // export const lightTheme = {
-//     primary: '#1E90FF',
-//     secondary: '#7F00FF',
-//     background: '#FAFAFA',
-//     text: '#20232A',
-//     accent: '#FF6F61',
-//     secondaryBackground: '#E0E0E0', // Slightly darker than main light background
-//   };
-  
-//   export const darkTheme = {
-//     primary: '#00FF99',
-//     secondary: '#7F00FF',
-//     background: '#20232A',
-//     text: '#FFFFFF',
-//     accent: '#FF6F61',
-//     secondaryBackground: '#2A2E38', // Slightly lighter than main dark background
-//   };
+//   primary: '#ffffff', // White
+//   secondary: '#ff66b2', // Soft pink
+//   background: '#f5f5f5', // Very light gray
+//   text: '#333333', // Dark gray
+//   accent: '#00bfff', // Sky blue
+//   secondaryBackground: '#e0e0e0', // Light gray
+// };
+
+// export const darkTheme = {
+//   primary: '#0f0f0f', // Very dark gray
+//   secondary: '#ff007f', // Vibrant pink
+//   background: '#0a0a0a', // Almost black
+//   text: '#e0e0e0', // Light gray
+//   accent: '#00ffff', // Cyan
+//   secondaryBackground: '#1a1a1a', // Dark gray
+// };
 
 
 

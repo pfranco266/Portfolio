@@ -16,18 +16,22 @@ export const ProjectContainer = styled.div`
     align-items: start;
     margin-bottom: 3rem;
     padding: 10px;
+    box-shadow: 2px 6px 15px #ff007f;
 
     background-color: ${({theme})=> theme === 'light' ? lightTheme.secondaryBackground : darkTheme.secondaryBackground};
 
     border: 2px solid transparent; 
     border-radius: 10px; 
+    
     @media (min-width: 1040px) {
         flex-direction: row;
       }
 
     &:hover {
         cursor: pointer;
-        box-shadow: 0 0 0 2px #fb9062; 
+    
+        box-shadow: 0 0 0 2px ${({ theme }) => theme === 'light' ? lightTheme.accent : darkTheme.accent};
+ 
         ${Subtitle} {
             color: #05d5c4;
         }

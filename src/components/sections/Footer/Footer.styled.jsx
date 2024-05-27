@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { BsRocket } from "react-icons/bs";
+import { darkTheme, lightTheme } from "../../../Styles";
 
 
 export const StyledFooter = styled.footer`
@@ -19,7 +20,7 @@ export const StyledFooter = styled.footer`
 export const RocketIcon = styled(BsRocket)`
     width: 2.5rem;
     height: 1.8rem;
-    color: ${({theme})=> theme === 'light' ? '#fb9062' : '#fb9062'};
+    color: ${({theme})=> theme === 'light' ? lightTheme.secondary : darkTheme.secondary};
     margin-right: 8px; 
     transition: transform 0.2s ease; 
     &:hover {

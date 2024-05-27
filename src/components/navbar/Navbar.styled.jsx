@@ -5,11 +5,11 @@ import { lightTheme, darkTheme } from "../../Styles";
 const slideIn = keyframes`
   from {
     opacity: 0;
-    transform: translateY(100%); // Start from below the screen
+    transform: translateY(100%); 
   }
   to {
     opacity: 1;
-    transform: translateY(0); // End at the usual position
+    transform: translateY(0);
   }
 `;
 
@@ -33,7 +33,7 @@ export const NavbarContainer = styled.div`
     padding: 2ems;
     justify-content: center; 
     align-items: center;
-    overflow: hidden; // Hide overflow within the navbar container
+    overflow: hidden; 
 
 
     @media (min-width: 1040px) { 
@@ -141,9 +141,9 @@ export const Text = styled.p`
 
 export const NavHidden = styled.div`
   display: none; // Hidden by default
-  animation: ${slideIn} 0.5s ease-out forwards; // Apply the animation
+  animation: ${slideIn} 0.5s ease-out forwards; 
 
-  @media (min-width: 968px) { // Show and animate on larger screens
+  @media (min-width: 968px) { 
     display: flex;
     justify-content: space-around; 
     width: 100%;
@@ -160,27 +160,39 @@ export const NavHidden = styled.div`
 
 
 
-export const NavLink = styled.a`
-  /* Styles for your navigation links */
-  display: block; // Example: Makes each link a block element for vertical stacking
-  padding: .5em 0; // Example: Adds some padding above and below each link
-  color: ${({theme})=> theme === 'light' ? lightTheme.primary : darkTheme.primary}; 
-  box-shadow: ${({ isActive }) => (isActive ? `0 2px 0 0px ${lightTheme.accent}` : 'none')};
-  transition: border-color 0.3s; /* Smooth transition for the border color */
-  text-decoration: none; // Removes underline from links
-  cursor: pointer;
-  &:hover {
-    color: ${({theme})=> theme === 'light' ? lightTheme.secondary : darkTheme.secondary}; 
-    box-shadow: 0 2px 0 0px #f1f1f1;
 
+export const NavLink = styled.a`
+  
+  display: block; 
+  padding: .5em 0; 
+  color: ${({ isActive, theme }) =>
+    isActive
+      ? theme === 'light'
+        ? lightTheme.accent
+        : darkTheme.secondary
+      : theme === 'light'
+      ? lightTheme.primary
+      : darkTheme.primary};
+  box-shadow: ${({ isActive, theme }) =>
+    isActive ? `0 2px 0 0px ${theme === 'light' ? lightTheme.secondary : darkTheme.accent}` : 'none'};
+  transition: border-color 0.3s; /* Smooth transition for the border color */
+  text-decoration: none; 
+  cursor: pointer;
+
+  &:hover {
+    color: ${({ theme }) => (theme === 'light' ? lightTheme.secondary : darkTheme.secondary)};
+    box-shadow: 0 2px 0 0px ${({ theme }) => (theme === 'light' ? lightTheme.accent : darkTheme.accent)};
   }
+
   @media (min-width: 1040px) {
     font-size: 1em;
     text-align: left;
-
   }
+
   @media (min-width: 1700px) {
     font-size: 1.5em;
   }
 `;
+
+
 
