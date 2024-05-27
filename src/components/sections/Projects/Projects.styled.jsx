@@ -16,7 +16,7 @@ export const ProjectContainer = styled.div`
     align-items: start;
     margin-bottom: 3rem;
     padding: 10px;
-    box-shadow: 2px 6px 15px #ff007f;
+    box-shadow: 2px 6px 15px ${({theme})=> theme === 'light' ? darkTheme.background : darkTheme.secondary};
 
     background-color: ${({theme})=> theme === 'light' ? lightTheme.secondaryBackground : darkTheme.secondaryBackground};
 
