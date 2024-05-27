@@ -35,11 +35,7 @@ export const NavbarContainer = styled.div`
     align-items: center;
     overflow: hidden; // Hide overflow within the navbar container
 
-    @media (min-width: 720px) { 
-        width: 80%;
-        height: 100vh;
 
-      }
     @media (min-width: 1040px) { 
         width: 100%;
         height: 100vh;

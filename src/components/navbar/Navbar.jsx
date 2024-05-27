@@ -1,16 +1,16 @@
 import { NavbarContainer, Title, Subtitle, Text, NavHidden, NavLink, Selfie} from './Navbar.styled.jsx';
 import { LightIcon, DarkIcon } from '../../App.styled.jsx';
 import Contact from '../sections/Contact/Contact';
-import React, {useContext, useState} from "react";
+import React, {useContext} from "react";
 import TypingEffect from '../../TypingEffect.jsx/TypingEffect.jsx';
-import selfie from "../../assets/Images/phil.webp"
-import selfiev2 from "../../assets/Images/sunglasses.webp"
+import selfie from "../../assets/Images/phil.webp";
+import selfiev2 from "../../assets/Images/sunglasses.webp";
 import { ThemeContext } from '../../Store/ThemeContext.jsx';
 
 
-function Navbar() {
+function Navbar({isActive}) {
   const {theme, toggleTheme} = useContext(ThemeContext);
-  const [isActive, setIsActive] = useState(false);
+  console.log(isActive);
 
   function scrollToSection(sectionId) {
     const sectElement = document.getElementById(sectionId);
@@ -47,13 +47,13 @@ function Navbar() {
         Self-taught professional, seeking an opportunity to contribute value, and expand my learnings.
       </Text>
       <NavHidden>
-        <NavLink theme={theme} aria-label="Scroll to experiences section" onClick={(e) => trackLinkClick(e, 'experiences')}>
+        <NavLink isActive={isActive === 'experience'} theme={theme} aria-label="Scroll to experiences section" onClick={(e) => trackLinkClick(e, 'experiences')}>
           - - - Experience
         </NavLink>
-        <NavLink theme={theme} aria-label="Scroll to project section" onClick={(e) => trackLinkClick(e, 'projects')}>
+        <NavLink isActive={isActive === 'projects'} theme={theme} aria-label="Scroll to project section" onClick={(e) => trackLinkClick(e, 'projects')}>
           - - - Projects
         </NavLink>
-        <NavLink theme={theme} aria-label="Scroll to about section" onClick={(e) => trackLinkClick(e, 'about')}>
+        <NavLink isActive={isActive === 'about'} theme={theme} aria-label="Scroll to about section" onClick={(e) => trackLinkClick(e, 'about')}>
           - - - About
         </NavLink>
       </NavHidden>

@@ -4,10 +4,10 @@ import {Title, Container} from "../../../App.styled"
 import aboutData from "./aboutData";
 import { ThemeContext } from "../../../Store/ThemeContext";
 
-function About () {
+function About ({aboutRef}) {
     const {theme} = useContext(ThemeContext)
     return (
-        <Container id="about">
+        <Container ref={aboutRef} id="about">
             <Title theme={theme}> 
                 ABOUT
             </Title>

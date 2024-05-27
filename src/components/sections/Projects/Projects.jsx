@@ -7,11 +7,12 @@ import { ThemeContext } from "../../../Store/ThemeContext.jsx";
 
 
 
-function Projects () {
+function Projects ({projectRef}) {
 
     const {theme} = useContext(ThemeContext);
+
     return (
-        <Container id="projects">
+        <Container ref={projectRef} id="projects">
             <Title theme={theme}>PROJECTS</Title>
             <Project theme={theme} projects={projectData}/>
         </Container>

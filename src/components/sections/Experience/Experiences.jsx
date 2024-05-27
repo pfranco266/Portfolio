@@ -15,7 +15,7 @@ import { ThemeContext } from "../../../Store/ThemeContext.jsx";
 
 
 
-function Experiences() {
+function Experiences({experienceRef}) {
   const {theme} = useContext(ThemeContext);
 
     const [clicked, setClicked] = useState(false);
@@ -34,7 +34,7 @@ function Experiences() {
       }
 
         return (
-            <Container id="experiences">
+            <Container ref={experienceRef} id="experiences">
                 <Title theme={theme}>EXPERIENCE</Title>
                 <Experience experiences={experiences} theme={theme} />
                 <ResumeContainer>
