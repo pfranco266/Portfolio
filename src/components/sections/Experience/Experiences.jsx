@@ -38,7 +38,7 @@ function Experiences({ experienceRef }) {
       <Title theme={theme}>EXPERIENCE</Title>
       <Experience experiences={experiences} theme={theme} />
       <ResumeContainer>
-        <a href="/webdev.pdf"
+        <a href="https://pfranco266.github.io/Portfolio/webdev.pdf"
           download="webdev.pdf"
           onClick={() => trackResumeDownload('Web Dev Resume')}>
           <DownloadButton theme={theme}>Web Dev Resume <DownloadIcon /></DownloadButton>
