@@ -1,7 +1,7 @@
 import ohanaThumbnail from '../../../assets/Images/Ohana.png';
 
 import PhilCamp from '../../../assets/Images/Philcamp.png';
-
+import phillymon from "../../../assets/Images/phillymon.png"
 
 import Mapty from '../../../assets/Images/Mapty.png';
 
@@ -33,6 +33,33 @@ import netlify from "../../../assets/Images/TechVectors/netlify-seeklogo.svg"
 const projectData = [
     {
         id: 1,
+        name: 'Phillymon',
+        description: `Pokemon and "pokedex" style app, where you can explore your 
+        favorite pokemon, expand individual pokemon details, "buy cards", and search 'em all. Created using PokeAPIs, SVGs from github.`,
+        tech: [{
+            name: 'React',
+            icon: react,
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg',
+
+        }, 
+        {
+            name: 'Styled Components',
+            icon: styled,
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg',
+
+        }, 
+        {
+            name: 'Netlify',
+            icon: netlify,
+            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg',
+
+        }
+    ],
+        website: 'https://phillymon.netlify.app/',
+        thumbnail: phillymon
+    },
+    {
+        id: 2,
         name: 'Ohana Sports',
         description: `1 of 2 developers to design, and maintain site from scratch. Built using React, and Azure Functions for the backend.
         This project was my first working with another team member. We had weekly meetings with the site owner to discuss direction
@@ -54,7 +81,7 @@ const projectData = [
         thumbnail: ohanaThumbnail,
     },
     {
-        id: 2,
+        id: 3,
         name: 'Mapty',
         description: `'Mapty', is a workout tracking application, made in Vanilla JS. This is part of a tutorial by Jonas
         Schmeddmen. I took the reigns on this to add additional functionality, as well as stylings to make it mobile friendly. 
@@ -82,7 +109,7 @@ const projectData = [
         thumbnail: Mapty
     },
     {
-        id: 3,
+        id: 4,
         name: 'PhilCamp',
         description: `Easily my most robust and challenging project. This was part of a full stack web development bootcamp I took
         over the period of 6 months. Final project is a bit outdated, so while implementing, I also have to find modern solutions 
@@ -125,7 +152,8 @@ const projectData = [
         }],
         website: 'https://philcamp.onrender.com/home',
         thumbnail: PhilCamp
-    }
+    }, 
+
 ];
 
 export default projectData;
