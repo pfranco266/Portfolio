@@ -77,7 +77,7 @@ const projectData = [
             name: 'Azure Functions',
             icon: azure
         }],
-        website: 'https://www.ohanasportsllc.com/',
+        website: 'https://jolly-sky-0a4ffd01e-test.westus2.4.azurestaticapps.net/',
         thumbnail: ohanaThumbnail,
     },
     {
