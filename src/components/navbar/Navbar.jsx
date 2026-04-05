@@ -6,11 +6,11 @@ import TypingEffect from '../../TypingEffect.jsx/TypingEffect.jsx';
 import selfie from "../../assets/Images/phil.webp";
 import selfiev2 from "../../assets/Images/sunglasses.webp";
 import { ThemeContext } from '../../Store/ThemeContext.jsx';
+import { trackNavClick, trackThemeToggle } from '../../utils/analytics.js';
 
 
 function Navbar({isActive}) {
   const {theme, toggleTheme} = useContext(ThemeContext);
-  console.log(isActive);
 
   function scrollToSection(sectionId) {
     const sectElement = document.getElementById(sectionId);
@@ -21,24 +21,21 @@ function Navbar({isActive}) {
     }
   }
 
-  function trackLinkClick(event, sectionName) {
-    event.preventDefault(); // This might be optional depending on your actual navigation mechanism
-    scrollToSection(sectionName);
-    window.gtag('event', 'select_content', {
-      content_type: 'navigation',
-      item_id: sectionName
-    });
+  function handleThemeToggle() {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    trackThemeToggle(newTheme);
+    toggleTheme();
   }
 
   return (
     <NavbarContainer>
-        {theme === 'light' ? <LightIcon onClick={toggleTheme}/> : <DarkIcon onClick={toggleTheme}/>}
+        {theme === 'light' ? <LightIcon onClick={handleThemeToggle}/> : <DarkIcon onClick={handleThemeToggle}/>}
 
       <Title theme={theme}>
         Phillip Franco
       </Title>
       {theme === 'light' ? <Selfie src={selfiev2} alt='animated portrait'/> : <Selfie src={selfie} alt='animated portrait'/>}
-      
+
 
       <Subtitle theme={theme}>
         <TypingEffect text={`Web Developer`}/>
@@ -47,13 +44,13 @@ function Navbar({isActive}) {
         Self-taught professional, seeking an opportunity to contribute value, and expand my learnings.
       </Text>
       <NavHidden>
-        <NavLink isActive={isActive === 'experience'} theme={theme} aria-label="Scroll to experiences section" onClick={(e) => trackLinkClick(e, 'experiences')}>
+        <NavLink isActive={isActive === 'experience'} theme={theme} aria-label="Scroll to experiences section" onClick={() => { trackNavClick('experiences'); scrollToSection('experiences'); }}>
           - - - Experience
         </NavLink>
-        <NavLink isActive={isActive === 'project'} theme={theme} aria-label="Scroll to project section" onClick={(e) => trackLinkClick(e, 'projects')}>
+        <NavLink isActive={isActive === 'project'} theme={theme} aria-label="Scroll to project section" onClick={() => { trackNavClick('projects'); scrollToSection('projects'); }}>
           - - - Projects
         </NavLink>
-        <NavLink isActive={isActive === 'about'} theme={theme} aria-label="Scroll to about section" onClick={(e) => trackLinkClick(e, 'about')}>
+        <NavLink isActive={isActive === 'about'} theme={theme} aria-label="Scroll to about section" onClick={() => { trackNavClick('about'); scrollToSection('about'); }}>
           - - - About
         </NavLink>
       </NavHidden>
@@ -63,6 +60,3 @@ function Navbar({isActive}) {
 }
 
 export default Navbar;
-
-
-

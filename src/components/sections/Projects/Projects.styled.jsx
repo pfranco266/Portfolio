@@ -4,10 +4,8 @@ import { darkTheme, lightTheme } from "../../../Styles";
 
 
 export const Subtitle = styled.h4`
-color: ${({theme})=> theme === 'light' ? '#3b7998' : '#3b7998'};
+color: ${({theme})=> theme === 'light' ? lightTheme.secondary : darkTheme.secondary};
 padding: 2.5vh 0;
-    
-background-color: magenta;
 `;
 
 export const ProjectContainer = styled.div`
@@ -82,10 +80,6 @@ display: flex;
 
 export const LargeScreenContainer = styled.div`
 display: flex;
-`
-
-export const Smalltext = styled.p`
-  font-size: 8px;
 `
 
 const rotate = keyframes`

@@ -1,5 +1,14 @@
 const experiences = [
     {
+        id: 0,
+        company: 'Snorkel AI',
+        location: 'Remote',
+        role: 'Senior Technical Recruiter, September 2024 - Present',
+        description: `Currently building out the Forward Deployed Engineer org from the ground up at an AI/ML data-as-a-service company.
+        Hiring across a broad technical spectrum including Forward Deployed Engineers, Backend, Frontend, and Full Stack Engineers,
+        IT Engineers, Director of IT, People Data/Operations Managers, and Recruiters.`
+    },
+    {
         id: 1,
         company: 'Meta (Formerly Facebook)',
         location: 'London, United Kingdom',

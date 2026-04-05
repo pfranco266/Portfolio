@@ -4,17 +4,21 @@ export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
 
-    const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
 
-     function toggleTheme  () {
-        setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
-      };
+  const toggleTheme = () => {
+    setTheme((prevTheme) => {
+      const next = prevTheme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      return next;
+    });
+  };
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
-}
+};
 
 export default ThemeProvider;

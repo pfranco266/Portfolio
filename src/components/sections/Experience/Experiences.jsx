@@ -1,36 +1,29 @@
 // External imports
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 
 // Internal component imports
 import Experience from "./Experience";
 
 // Style imports
-import { DownloadButton, DownloadIcon, ResumeContainer } from './Experience.styled';
+import { DownloadButton, ResumeContainer } from './Experience.styled';
 import { Title, Container } from "../../../App.styled.jsx";
 
 // Data imports
 import experiences from './experiencesData.js'
 
 import { ThemeContext } from "../../../Store/ThemeContext.jsx";
+import { trackEvent } from "../../../utils/analytics.js";
 
 
 
 function Experiences({ experienceRef }) {
   const { theme } = useContext(ThemeContext);
 
-  const [clicked, setClicked] = useState(false);
-
-  function trackResumeDownload(resumeName) {
-    console.log(clicked);
-    setClicked((prev) => {
-      return prev === false ? true : false;
-    })
-    if (window.gtag) {
-      window.gtag('event', 'download', {
-        event_category: 'Resume',
-        event_label: resumeName,
-      });
-    }
+  function trackLinkedInClick() {
+    trackEvent('click', {
+      event_category: 'Resume',
+      event_label: 'LinkedIn Profile',
+    });
   }
 
   return (
@@ -38,16 +31,11 @@ function Experiences({ experienceRef }) {
       <Title theme={theme}>EXPERIENCE</Title>
       <Experience experiences={experiences} theme={theme} />
       <ResumeContainer>
-        <a href="https://pfranco266.github.io/Portfolio/webdev.pdf"
-          download="webdev.pdf"
-          onClick={() => trackResumeDownload('Web Dev Resume')}>
-          <DownloadButton theme={theme}>Web Dev Resume <DownloadIcon /></DownloadButton>
-        </a>
-        <a href="https://pfranco266.github.io/Portfolio/Recruiter.pdf"
-          download="Phil_Franco_Recruiter.pdf"
-          target="_blank" // Opens in a new tab
-          onClick={() => trackResumeDownload('Recruiter Resume')}>
-          <DownloadButton theme={theme}>Recruiter Resume <DownloadIcon /></DownloadButton>
+        <a href="https://www.linkedin.com/in/philfranco/"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={trackLinkedInClick}>
+          <DownloadButton theme={theme}>View LinkedIn</DownloadButton>
         </a>
       </ResumeContainer>
     </Container>

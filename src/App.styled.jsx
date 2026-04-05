@@ -71,11 +71,9 @@ export const Container = styled.section`
 
 export const Title = styled.h2`
 margin-bottom: 5vh;
-color: ${({ theme }) => theme === 'light' ? lightTheme.primary : darkTheme.primary}; 
-// #05d5c4;
+color: ${({ theme }) => theme === 'light' ? lightTheme.primary : darkTheme.primary};
 text-transform: capitalize;
 letter-spacing: 5px;
-
 `;
 
 export const Subtitle = styled.h4`
@@ -92,8 +90,8 @@ export const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: 'Exo 2';
-    src: url('/assets/Fonts/static/Exo2-Black.ttf') format('truetype');
-    font-weight: 900;
+    src: url('/assets/Fonts/Exo2-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
     font-style: normal;
   }
 
