@@ -53,9 +53,37 @@ function Project({ projects, theme }) {
 
     return (
         <>
-            {listItems}
+            {listItems && listItems}
         </>
     );
 }
 
 export default Project;
+
+
+Input: [2, 2, 1]
+Output: 1
+
+Input: [4, 1, 2, 1, 2]
+Output: 4
+
+
+
+type Amount = (number[]) => Number
+
+const oddNumberOut: Amount = (arr) => {
+    const numMap: [key, string] = {
+        key: string
+    }
+
+    for(let i: number = 0; i < arr.length; i++) {
+        numMap[i] = (numMap[i] || 0) +1
+    }
+
+    for(let curr: number in numMap) {
+        if(curr !==2) {
+            return curr
+        }
+    }
+    return 0;
+}

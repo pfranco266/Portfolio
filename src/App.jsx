@@ -165,3 +165,20 @@ export default App;
 //     }
 //   };
 // }, []);
+
+
+
+
+const person = {
+  name: 'Alice',
+  age: 25,
+  address: {
+    city: 'Wonderland',
+    zip: '12345'
+  }
+};
+
+const changedPerson = {
+  ...person, 
+  age: 26
+}
